@@ -33,9 +33,8 @@ I specialize in full-stack development (Next.js, React, Node.js, Spring Boot) an
 Passionate about innovation, I blend creativity and engineering to craft impactful digital solutions.
 `,
 
-  avatar: "/me.webp",
-  ogImage:
-    "https://assets.chanhdai.com/images/screenshot-og-image-light.png?t=1759581475",
+  avatar: "me.webp",
+  ogImage: '' , // "https://assets.chanhdai.com/images/screenshot-og-image-light.png?t=1759581475"
   namePronunciationUrl: "/audio/audio.mp3",
   keywords: ["Jeraidi Yassir", "jeraidi yassir", "yassir jr", "yassirjr"],
   dateCreated: "2025-10-27", // YYYY-MM-DD
