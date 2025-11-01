@@ -38,10 +38,6 @@ export function Overview() {
           href={USER.website}
         />
 
-        <IntroItem
-          icon={USER.gender === "male" ? MarsIcon : VenusIcon}
-          content={USER.pronouns}
-        />
       </PanelContent>
     </Panel>
   );
