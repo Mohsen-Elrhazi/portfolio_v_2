@@ -1,4 +1,4 @@
-import { GlobeIcon, MapPinIcon, MarsIcon, VenusIcon } from "lucide-react";
+import { GlobeIcon, MapPinIcon , DownloadCloudIcon } from "lucide-react";
 
 import { USER } from "@/features/profile/data/user";
 import { urlToName } from "@/utils/url";
@@ -8,6 +8,9 @@ import { EmailItem } from "./email-item";
 import { IntroItem } from "./intro-item";
 import { JobItem } from "./job-item";
 import { PhoneItem } from "./phone-item";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { CvItem } from "./cv-item";
 
 export function Overview() {
   return (
@@ -36,6 +39,12 @@ export function Overview() {
           icon={GlobeIcon}
           content={urlToName(USER.website)}
           href={USER.website}
+        />
+
+        <CvItem
+          icon={DownloadCloudIcon}
+          content="Download CV"
+          href={USER.cv}
         />
 
       </PanelContent>

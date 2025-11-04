@@ -38,4 +38,5 @@ Passionate about innovation, I blend creativity and engineering to craft impactf
   namePronunciationUrl: "/audio/audio.mp3",
   keywords: ["Jeraidi Yassir", "jeraidi yassir", "yassir jr", "yassirjr"],
   dateCreated: "2025-10-27", // YYYY-MM-DD
+  cv: "/yassir-jeraidi.pdf",
 };
