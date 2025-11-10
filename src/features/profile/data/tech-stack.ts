@@ -23,16 +23,6 @@ export const TECH_STACK: TechStack[] = [
     },
   },
   {
-    key: "python",
-    title: "Python",
-    href: "https://www.python.org/",
-    categories: ["Language"],
-    icon: {
-      light: "/icons/python.svg",
-      dark: "/icons/python.svg",
-    },
-  },
-  {
     key: "php",
     title: "PHP",
     href: "https://www.php.net/",
@@ -61,8 +51,8 @@ export const TECH_STACK: TechStack[] = [
     href: "https://react.dev/",
     categories: ["Library", "UI Library"],
     icon: {
-      light: "/icons/reactquery.svg",
-      dark: "/icons/reactquery.svg",
+      light: "/icons/React_light.svg",
+      dark: "/icons/React_dark.svg",
     },
   },
   {
@@ -108,8 +98,8 @@ export const TECH_STACK: TechStack[] = [
   },
   {
     key: "spring",
-    title: "Spring Boot",
-    href: "https://spring.io/projects/spring-boot",
+    title: "Spring Frameworks",
+    href: "https://spring.io/projects/spring-framework",
     categories: ["Framework"],
     icon: {
       light: "/icons/spring.svg",
@@ -181,91 +171,6 @@ export const TECH_STACK: TechStack[] = [
     },
   },
 
-  {
-    key: "sqlite",
-    title: "SQLite",
-    href: "https://www.sqlite.org/",
-    categories: ["Database"],
-    icon: {
-      light: "/icons/sqlite.svg",
-      dark: "/icons/sqlite.svg",
-    },
-  },
-  {
-    key: "redis",
-    title: "Redis",
-    href: "https://redis.io/",
-    categories: ["Database"],
-    icon: {
-      light: "/icons/redis.svg",
-      dark: "/icons/redis.svg",
-    },
-  },
-  {
-    key: "drizzle-orm",
-    title: "Drizzle ORM",
-    href: "https://orm.drizzle.team/",
-    categories: ["ORM"],
-    icon: {
-      light: "/icons/Drizzle ORM_light.svg",
-      dark: "/icons/Drizzle ORM_dark.svg",
-    },
-    theme: true,
-  },
-  {
-    key: "supabase",
-    title: "Supabase",
-    href: "https://supabase.com/",
-    categories: ["Database", "Backend as a Service"],
-    icon: {
-      light: "/icons/supabase.svg",
-      dark: "/icons/supabase.svg",
-    },
-  },
-
-  // 🔐 Auth & Security
-  {
-    key: "jwt",
-    title: "JWT",
-    href: "https://jwt.io/",
-    categories: ["Security"],
-    icon: {
-      light: "/icons/jwt.svg",
-      dark: "/icons/jwt.svg",
-    },
-  },
-  {
-    key: "keycloak",
-    title: "Keycloak",
-    href: "https://www.keycloak.org/",
-    categories: ["Security"],
-    icon: {
-      light: "/icons/keycloak.svg",
-      dark: "/icons/keycloak.svg",
-    },
-  },
-  {
-    key: "authjs",
-    title: "Auth.js",
-    href: "https://authjs.dev/",
-    categories: ["Security"],
-    icon: {
-      light: "/icons/authjs.svg",
-      dark: "/icons/authjs.svg",
-    },
-  },
-  {
-    key: "clerk",
-    title: "Clerk",
-    href: "https://clerk.com/",
-    categories: ["Security"],
-    icon: {
-      light: "/icons/Clerk_light.svg",
-      dark: "/icons/Clerk_dark.svg",
-    },
-    theme: true,
-  },
-
   // ☁️ Tools & Cloud
   {
     key: "vercel",
@@ -277,6 +182,26 @@ export const TECH_STACK: TechStack[] = [
       dark: "/icons/Vercel_dark.svg",
     },
     theme: true,
+  },
+  {
+    key: "graphql",
+    title: "GraphQL",
+    href: "https://graphql.org/",
+    categories: ["API"],
+    icon: {
+      light: "/icons/graphql.svg",
+      dark: "/icons/graphql.svg",
+    },
+  },
+  {
+    key: "vite",
+    title: "Vite",
+    href: "https://vitejs.dev/",
+    categories: ["Bundler", "Build Tool"],
+    icon: {
+      light: "/icons/vitejs.svg",
+      dark: "/icons/vitejs.svg",
+    },
   },
   {
     key: "openai",
@@ -297,26 +222,6 @@ export const TECH_STACK: TechStack[] = [
     icon: {
       light: "/icons/claude-ai-icon.svg",
       dark: "/icons/claude-ai-icon.svg",
-    },
-  },
-  {
-    key: "graphql",
-    title: "GraphQL",
-    href: "https://graphql.org/",
-    categories: ["API"],
-    icon: {
-      light: "/icons/graphql.svg",
-      dark: "/icons/graphql.svg",
-    },
-  },
-  {
-    key: "vite",
-    title: "Vite",
-    href: "https://vitejs.dev/",
-    categories: ["Bundler", "Build Tool"],
-    icon: {
-      light: "/icons/vitejs.svg",
-      dark: "/icons/vitejs.svg",
     },
   },
 ];
