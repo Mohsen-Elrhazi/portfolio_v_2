@@ -87,6 +87,16 @@ export const TECH_STACK: TechStack[] = [
     },
   },
   {
+    key: "spring",
+    title: "Spring",
+    href: "https://spring.io/projects/spring-boot",
+    categories: ["Framework"],
+    icon: {
+      light: "/icons/spring.svg",
+      dark: "/icons/spring.svg",
+    },
+  },
+  {
     key: "nestjs",
     title: "NestJS",
     href: "https://nestjs.com/",
@@ -94,16 +104,6 @@ export const TECH_STACK: TechStack[] = [
     icon: {
       light: "/icons/nestjs.svg",
       dark: "/icons/nestjs.svg",
-    },
-  },
-  {
-    key: "spring",
-    title: "Spring Boot",
-    href: "https://spring.io/projects/spring-boot",
-    categories: ["Framework"],
-    icon: {
-      light: "/icons/spring.svg",
-      dark: "/icons/spring.svg",
     },
   },
   {
