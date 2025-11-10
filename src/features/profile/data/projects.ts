@@ -69,12 +69,12 @@ Modern, user-friendly interface with personalization options:
 - Collaborate on shared calendars
 - Ensure accessibility across devices
 - Enhance usability with dark mode or preferred time formats`,
-    isExpanded: true,
+    isExpanded: false,
   },
   {
     id: "overtime-app",
     title: "Calculation of Overtime Hours",
-    period: { start: "04.2024" , end : "06.2024"},
+    period: { start: "04.2024", end: "06.2024" },
     link: "#",
     skills: [
       "Electron.js",
@@ -138,7 +138,7 @@ An administrative document management system built for Atos, enabling secure cre
     period: { start: "03.2023", end: "06.2023" },
     link: "#",
     skills: [
-      "Laravel",
+      "Spring Boot",
       "React.js",
       "MySQL",
       "Tailwind CSS",
@@ -172,6 +172,7 @@ A full-featured school management system built with Laravel and React, managing 
       "Next.js",
       "Node.js",
       "Laravel",
+      "Spring Boot",
       "MySQL",
       "Tailwind CSS",
       "TypeScript",
