@@ -98,8 +98,8 @@ export const TECH_STACK: TechStack[] = [
   },
   {
     key: "spring",
-    title: "Spring Frameworks",
-    href: "https://spring.io/projects/spring-framework",
+    title: "Spring Boot",
+    href: "https://spring.io/projects/spring-boot",
     categories: ["Framework"],
     icon: {
       light: "/icons/spring.svg",
