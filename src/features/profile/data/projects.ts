@@ -138,7 +138,7 @@ An administrative document management system built for Atos, enabling secure cre
     period: { start: "03.2023", end: "06.2023" },
     link: "#",
     skills: [
-      "Spring Boot",
+      "Laravel",
       "React.js",
       "MySQL",
       "Tailwind CSS",
