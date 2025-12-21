@@ -4,14 +4,14 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     icon: "https://assets.chanhdai.com/images/link-icons/linkedin.webp?t=1759581475",
     title: "LinkedIn",
-    description: "yassir-jeraidi",
-    href: "https://www.linkedin.com/in/yassir-jeraidi",
+    description: "mohsen-elrhazi",
+    href: "https://www.linkedin.com/in/mohsen-elrhazi-13a65b2bb/",
   },
   {
     icon: "https://assets.chanhdai.com/images/link-icons/github.webp?t=1759581475",
     title: "GitHub",
-    description: "yassir-jeraidi",
-    href: "https://github.com/yassir-jeraidi",
+    description: "mohsen-elrhazi",
+    href: "https://github.com/Mohsen-Elrhazi",
   },
   // {
   //   icon: "https://assets.chanhdai.com/images/link-icons/x.webp?t=1759581475",

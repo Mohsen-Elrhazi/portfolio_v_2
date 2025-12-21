@@ -43,7 +43,7 @@ export function Overview() {
 
         <CvItem
           icon={DownloadCloudIcon}
-          content="Download CV"
+          content="Consulter mon CV"
           href={USER.cv}
         />
 

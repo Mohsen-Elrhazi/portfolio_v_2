@@ -13,7 +13,7 @@ export type TechStack = {
   /** Display name of the technology. */
   title: string;
   /** Official website URL. */
-  href: string;
+  // href: string;
   /** Category tags used for grouping/filtering. */
   categories: string[];
 

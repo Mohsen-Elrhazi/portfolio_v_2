@@ -10,7 +10,9 @@ export function CvItem({
   href?: string;
 }) {
   return (
-    <div className="flex items-center gap-4 font-mono text-sm bg-accent text-accent-foreground rounded-md">
+    // <div className="flex items-center gap-4 font-mono text-sm bg-accent text-accent-foreground rounded-md">
+    <div className="flex items-center gap-4 font-mono text-sm ">
+
       <div
         className="flex size-6 shrink-0 items-center justify-center rounded-lg border border-muted-foreground/15 bg-muted ring-1 ring-edge ring-offset-1 ring-offset-background"
         aria-hidden

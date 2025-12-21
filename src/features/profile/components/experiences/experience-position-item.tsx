@@ -71,7 +71,22 @@ export function ExperiencePositionItem({
                 />
               </>
             )}
+            {/* Location */}
+              {position.location && (
+                  <>
+                    <dl>
+                      <dt className="sr-only">Location</dt>
+                      <dd>{position.location}</dd>
+                    </dl>
 
+                    <Separator
+                      className="data-[orientation=vertical]:h-4"
+                      orientation="vertical"
+                    />
+                  </>
+                )}
+
+                {/* period */}
             <dl>
               <dt className="sr-only">Employment Period</dt>
               <dd className="flex items-center gap-0.5">

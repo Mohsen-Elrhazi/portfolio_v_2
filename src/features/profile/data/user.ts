@@ -1,42 +1,41 @@
 import type { User } from "@/features/profile/types/user";
 
 export const USER: User = {
-  firstName: "Jeraidi",
-  lastName: "Yassir",
-  displayName: "Jeraidi Yassir",
-  username: "yassir-jeraidi",
+  firstName: "Mohsen",
+  lastName: "Elrhazi",
+  displayName: "Mohsen Elrhazi",
+  username: "mohsenelrhazi",
   gender: "male",
   pronouns: "he/him",
   bio: "Creating with code. Small details matter.",
   flipSentences: [
-    "Full stack engineer",
+    "Développeur Full Stack",
     "Software engineer",
     "Frontend engineer",
     "Backend engineer",
     "Cloud engineer",
   ],
-  address: "Casablanca, Morocco",
-  phoneNumber: "KzIxMjYzODcyNTQwMw==", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
-  email: "eWFzc2lyLmplcmFpZGlAZ21haWwuY29t", // base64 encoded
-  website: "https://jeraidi.tech",
+  address: "Youssoufia, Maroc",
+  phoneNumber: "KzIxMiA2MDQ1NTY0ODc=", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
+  email: "ZWxyaGF6aS5tb2hzZW4uZGV2QGdtYWlsLmNvbQ==", // base64 encoded
+  website: "https://elrhazi.tech",
   jobTitle: "Full stack Engineer",
   jobs: [
     {
-      title: "Software Engineer Student",
-      company: "ENSET Media — Distributed Systems",
-      website: "https://enset-media.ac.ma",
+      title: "Développeur Full Stack ",
+      company: "Youcode - UM6P",
+      website: "https://youcode.ma/",
     },
   ],
   about: `
-I'm Yassir Jeraidi — a Moroccan Software Engineer and master's student in Distributed Systems & AI at ENSET Media.  
-I specialize in full-stack development (Next.js, React, Node.js, Spring Boot) and love building scalable, user-focused applications.  
-Passionate about innovation, I blend creativity and engineering to craft impactful digital solutions.
+Je suis Mohsen Elrhazi développeur full stack passionné par la conception et la mise en œuvre de solutions web innovantes. Rigoureux,
+curieux et orienté résultats, je cherche à contribuer à des projets à fort impact technologique et humain.
 `,
 
-  avatar: "me.webp",
+  avatar: "mohsen_profile.jpg",
   ogImage: '' , // "https://assets.chanhdai.com/images/screenshot-og-image-light.png?t=1759581475"
   namePronunciationUrl: "/audio/audio.mp3",
-  keywords: ["Jeraidi Yassir", "jeraidi yassir", "yassir jr", "yassirjr"],
+  keywords: ["Elrhazi Mohsen", "elrhazi mohsen", "mohsen elrhazi", ""],
   dateCreated: "2025-10-27", // YYYY-MM-DD
-  cv: "/yassir-jeraidi.pdf",
+  cv: "/CV_Elrhazi_Mohsen.pdf",
 };

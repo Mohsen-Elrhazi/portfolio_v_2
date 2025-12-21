@@ -5,6 +5,7 @@ import {
   DraftingCompassIcon,
   GraduationCapIcon,
   LightbulbIcon,
+  ServerIcon,
 } from "lucide-react";
 
 import type { ExperiencePositionIcon } from "../../types/experiences";
@@ -18,6 +19,7 @@ const iconMap: Record<
   education: GraduationCapIcon,
   business: BriefcaseBusinessIcon,
   idea: LightbulbIcon,
+  server: ServerIcon,
 };
 
 export function ExperienceIcon({

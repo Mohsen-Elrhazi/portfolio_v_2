@@ -2,53 +2,54 @@ import type { Experience } from "../types/experiences";
 
 export const EXPERIENCES: Experience[] = [
   {
-    id: "atos",
-    companyName: "ATOS",
-    companyLogo: "/atos-logo.png",
+    id: "softnex",
+    companyName: "SOFTNEX",
+    companyLogo: "/icons_entreprise/softnex.png",
     positions: [
       {
-        id: "atos-appdev-2024",
-        title: "Application Developer",
-        employmentPeriod: { start: "04.2024", end: "08.2024" },
-        employmentType: "Full-time",
+        id: "softnex-2025",
+        title: "Développeur Full-stack",
+        employmentPeriod: { start: "05.2025", end: "07.2025" },
+        // employmentType: "Full-time",
+        location: "Casablanca, Maroc",
         icon: "code",
-        description: `- Developed a desktop application for overtime calculation.
-- Developed a web application for administrative management.
-- Developed a blog management web application.`,
-        skills: ["Shadcn UI", "React.js", "Next.js", "Node.js", "Electron.js", "SQLite"],
+        description: `- Conception et développement d’une solution SaaS pour la gestion digitale des fiches de police hôtelières.`,
+        skills: ["React.js", "Laravel", "PostgreSQL", "Docker", "JWT", "Postman", "Jira", "Git/GitHub", "UML"],
       },
     ],
   },
   {
-    id: "cdc",
-    companyName: "CDC Digital and AI",
+    id: "onestcom",
+    companyName: "ONESTCOM",
+    companyLogo: "/icons_entreprise/onestcom.jpg",
     positions: [
       {
-        id: "cdc-webdev-2023",
-        title: "Web Developer",
-        employmentPeriod: { start: "03.2023", end: "05.2023" },
-        employmentType: "Full-time",
+        id: "onestcom-2023",
+        title: "Développeur Full-stack",
+        employmentPeriod: { start: "05.2024", end: "06.2024" },
+        // employmentType: "Full-time",
+        location: "Marrakech, Maroc",
         icon: "code",
-        description: `- Developed a website allowing company employees to print various management documents.`,
-        skills: ["React.js", "Tailwind CSS", "Laravel", "MySQL"],
+        description: `- Conception et Développement d’un Site E-commerce.`,
+        skills: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Git/GitHub", "Figma"],
       },
     ],
   },
   {
-    id: "freelance",
-    companyName: "Freelance",
+    id: "mdc",
+    companyName: "Maroc Datacenter",
+    companyLogo: "/icons_entreprise/mdc.jpg",
     positions: [
       {
-        id: "freelance-fullstack-2018",
-        title: "Full-stack Developer",
-        employmentPeriod: { start: "2022" },
-        employmentType: "Part-time",
-        icon: "code",
-        description: `- Built an order management website with real-time delivery tracking.
-- Developed an e-commerce site for bird's nest products.
-- Created a map to display monitoring station data.
-- Designed a customizable WordPress landing page.`,
-        skills: ["Laravel", "React", "Express.js", "Socket.IO", "MongoDB", "Firebase", "WordPress", "Docker", "NGINX"],
+        id: "mdc-2023",
+        title: "Stagiaire Systèmes & Réseaux",
+        employmentPeriod: { start: "07.2023", end: "08.2023" },
+        // employmentType: "Full-time",
+        location: "Rabat, Maroc",
+        icon: "server",
+        description: `- Analyse de l’architecture et de la configuration d’un Data Center.
+- Installation et configuration de l’hyperviseur VMware ESXi.`,
+        skills: ["Linux", "VMware ESXI", "Windows Server"],
       },
     ],
   },

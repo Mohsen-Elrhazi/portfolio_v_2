@@ -23,9 +23,11 @@ export function ProfileHeader() {
         <SimpleTooltip content="I'm from Morocco">
           {/* Flag of Morocco */}
 
-          <svg className="absolute top-0 -left-px h-8 sm:h-9"
-               viewBox="0 0 30 20"
-               xmlns="http://www.w3.org/2000/svg">
+          <svg
+            className="absolute top-0 -left-px h-8 sm:h-9"
+            viewBox="0 0 30 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <rect width="30" height="20" fill="#C1272D" />
             <polygon
               points="15,6 11.47,14.85 19.27,8.54 10.73,8.54 18.53,14.85"
@@ -45,10 +47,10 @@ export function ProfileHeader() {
           )}
         >
           <div className="line-clamp-1 font-mono text-xs text-zinc-300 select-none max-sm:hidden dark:text-zinc-800">
-            {"text-3xl "}
-            <span className="inline dark:hidden">text-zinc-950</span>
-            <span className="hidden dark:inline">text-zinc-50</span>
-            {" font-medium"}
+            {/* {"text-3xl "} */}
+            <span className="inline dark:hidden">{/* text-zinc-950 */}</span>
+            <span className="hidden dark:inline">{/* text-zinc-50 */}</span>
+            {/* {" font-medium"} */}
           </div>
         </div>
 

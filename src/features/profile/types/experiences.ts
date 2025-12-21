@@ -1,6 +1,6 @@
 export type ExperiencePositionIcon =
   /** Icon key used to render the position category in the UI. */
-  "code" | "design" | "education" | "business" | "idea";
+  "code" | "design" | "education" | "business" | "idea" | "server";
 
 export type ExperiencePosition = {
   id: string;
@@ -17,6 +17,10 @@ export type ExperiencePosition = {
   };
   /** Full-time | Part-time | Contract | Internship, etc. */
   employmentType?: string;
+
+   /** Location of the position (city, country, remote, etc.) */
+  location?: string;
+
   description?: string;
   /** UI icon to represent the role type. */
   icon?: ExperiencePositionIcon;
