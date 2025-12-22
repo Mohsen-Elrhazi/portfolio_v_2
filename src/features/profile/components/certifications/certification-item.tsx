@@ -69,9 +69,13 @@ export function CertificationItem({
           <dl>
             <dt className="sr-only">Issued on</dt>
             <dd>
-              <time dateTime={dayjs(certification.issueDate).toISOString()}>
-                {dayjs(certification.issueDate).format("DD.MM.YYYY")}
-              </time>
+              {certification.issueDate ? (
+                <time dateTime={certification.issueDate}>
+                  {dayjs(certification.issueDate).format("DD.MM.YYYY")}
+                </time>
+              ) : (
+                <span className="text-muted-foreground italic">En cours</span>
+              )}
             </dd>
           </dl>
         </div>

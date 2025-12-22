@@ -71,6 +71,22 @@ export function ExperiencePositionItem({
                 />
               </>
             )}
+
+             {/* school */}
+              {position.school && (
+                  <>
+                    <dl>
+                      <dt className="sr-only">School</dt>
+                      <dd>{position.school}</dd>
+                    </dl>
+
+                    <Separator
+                      className="data-[orientation=vertical]:h-4"
+                      orientation="vertical"
+                    />
+                  </>
+                )}
+
             {/* Location */}
               {position.location && (
                   <>

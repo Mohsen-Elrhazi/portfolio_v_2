@@ -1,4 +1,4 @@
-import { InfinityIcon, LinkIcon } from "lucide-react";
+import { Github, InfinityIcon, LinkIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -17,6 +17,7 @@ import { UTM_PARAMS } from "@/config/site";
 import { addQueryParams } from "@/utils/url";
 
 import type { Project } from "../../types/projects";
+import { MarkdownWithIcons } from "./MarkdownWithIcons";
 
 export function ProjectItem({
   className,
@@ -25,8 +26,9 @@ export function ProjectItem({
   className?: string;
   project: Project;
 }) {
-  const { start, end } = project.period;
-  const isOngoing = !end;
+  // const { start, end } = project.period;
+  // const isOngoing = !end;
+  const { start, end, isOngoing } = project.period;
 
   return (
     <CollapsibleWithContext defaultOpen={project.isExpanded} asChild>
@@ -59,7 +61,7 @@ export function ProjectItem({
                   {project.title}
                 </h3>
 
-                <dl className="text-sm text-muted-foreground">
+                {/* <dl className="text-sm text-muted-foreground">
                   <dt className="sr-only">Period</dt>
                   <dd className="flex items-center gap-0.5">
                     <span>{start}</span>
@@ -76,20 +78,65 @@ export function ProjectItem({
                       <span>{end}</span>
                     )}
                   </dd>
+                </dl> */}
+
+                <dl className="text-sm text-muted-foreground">
+                  <dt className="sr-only">Period</dt>
+                  <dd className="flex items-center gap-0.5">
+                    <span>{start}</span>
+
+                    {/* Afficher end seulement si défini */}
+                    {end && (
+                      <>
+                        <span className="font-mono">—</span>
+                        <span>{end}</span>
+                      </>
+                    )}
+
+                    {/* Afficher InfinityIcon si projet en cours */}
+                    {isOngoing && !end && (
+                      <>
+                        <span className="font-mono">—</span>
+                        <InfinityIcon
+                          className="h-4 w-4 translate-y-[1px]"
+                          aria-hidden
+                        />
+                        <span className="sr-only">Present</span>
+                      </>
+                    )}
+                  </dd>
                 </dl>
               </div>
 
-              <SimpleTooltip content="Open Project Link">
-                <a
-                  className="relative flex size-6 shrink-0 items-center justify-center text-muted-foreground after:absolute after:-inset-2 hover:text-foreground"
-                  href={addQueryParams(project.link, UTM_PARAMS)}
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <LinkIcon className="pointer-events-none size-4" />
-                  <span className="sr-only">Open Project Link</span>
-                </a>
-              </SimpleTooltip>
+              {/* Lien du projet */}
+              {project.link && (
+                <SimpleTooltip content="Ouvrir le lien du projet">
+                  <a
+                    className="flex items-center justify-center text-muted-foreground hover:text-foreground"
+                    href={addQueryParams(project.link, UTM_PARAMS)}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <LinkIcon className="size-4" />
+                    <span className="sr-only">Ouvrir le lien du projet</span>
+                  </a>
+                </SimpleTooltip>
+              )}
+
+              {/* Lien GitHub */}
+              {project.github && (
+                <SimpleTooltip content="Ouvrir le dépôt GitHub">
+                  <a
+                    className="flex items-center justify-center text-muted-foreground hover:text-foreground"
+                    href={addQueryParams(project.github, UTM_PARAMS)}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <Github className="size-4" />
+                    <span className="sr-only">Ouvrir le dépôt GitHub</span>
+                  </a>
+                </SimpleTooltip>
+              )}
 
               <div
                 className="shrink-0 text-muted-foreground [&_svg]:size-4"
@@ -105,8 +152,11 @@ export function ProjectItem({
           <div className="border-t border-dashed border-edge">
             <div className="space-y-4 p-4 duration-300 group-data-[state=closed]:animate-fade-out group-data-[state=open]:animate-fade-in">
               {project.description && (
+                // <Prose>
+                //   <Markdown>{project.description}</Markdown>
+                // </Prose>
                 <Prose>
-                  <Markdown>{project.description}</Markdown>
+                  <MarkdownWithIcons>{project.description}</MarkdownWithIcons>
                 </Prose>
               )}
 

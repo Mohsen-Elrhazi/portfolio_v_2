@@ -2,194 +2,450 @@ import type { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
   {
-    id: "full-calendar",
-    title: "Full Calendar",
+    id: "smartShop",
+    title: "SmartShop",
     period: {
-      start: "03.2024",
+      start: "2025",
     },
-    link: "https://full-calendar-yassir-jr.vercel.app/calendar",
+    github: "https://github.com/Mohsen-Elrhazi/smartShop-brief-croise-1.git",
     skills: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Shadcn UI",
-      "Framer Motion",
-      "Date-Fns",
-      "GitHub",
-    ],
-    description: `## 🏁 Introduction
-A feature-rich calendar application built with React, TypeScript, and ShadCN UI components. This project provides a customizable and interactive calendar experience with multiple views, event management, and a modern UI.
-
-## ✨ Key Features
-- 🗓️ **Multiple Views:** Day, Week, Month, Year, and Agenda views
-- 📝 **Event Management:** Create, edit, and delete events
-- 🔄 **Drag & Drop:** Move events between time slots and dates
-- ↔️ **Event Resizing:** Resize events in day and week views with smooth animations
-- 👥 **User Management:** Multi-user support with user filtering
-- 🎨 **Color Coding:** Events can be color-coded for better organization
-- 📱 **Responsive Design:** Works seamlessly across all device sizes
-- 🌑 **Dark Mode:** Full dark mode support
-- ⏰ **24/12 Hour Format:** Toggle between 24-hour and 12-hour time formats
-
-## 🧩 Core Concepts
-The calendar application is built around key principles to ensure a seamless, intuitive, and flexible user experience. These concepts define how data is presented, user interactions are handled, and customization is supported.
-
-### 💡 Event-Centric Design
-Events are the heart of the calendar, enabling users to manage their schedules effectively:
-- 🔹 **Flexible Event Management:** Create, edit, delete, and manage recurring events with metadata (title, description, time, attendees)
-- 🔹 **Drag & Drop / Resizing:** Move events across dates or time slots and resize in day/week views
-- 🔹 **Color Coding:** Assign distinct colors for quick identification and visual clarity
-
-**Common Use Cases:**
-- Scheduling meetings or appointments
-- Planning personal or team tasks
-- Tracking deadlines or milestones
-- Organizing recurring events like weekly check-ins
-
-### 🗂️ Multi-View Navigation
-Supports Day, Week, Month, Year, and Agenda views to cater to different user needs:
-- 🔹 **Dynamic View Switching:** Focus on specific timeframes or overview schedules
-- 🔹 **Context-Aware Interactions:** Tailored interactions per view (resize events, summarize in agenda)
-- 🔹 **Responsive Layouts:** Adapts to desktops, tablets, and mobile devices
-
-**Common Use Cases:**
-- Reviewing daily tasks in Day view
-- Planning weekly schedules in Week view
-- High-level overview in Month/Year view
-- Summarizing upcoming events in Agenda view
-
-### 🎨 Interactive and Customizable UI
-Modern, user-friendly interface with personalization options:
-- 🔹 **ShadCN UI Components:** Reusable and customizable for consistent design
-- 🔹 **Dark Mode & Time Format Options:** Toggle between light/dark mode and 24/12-hour format
-- 🔹 **Multi-User Support:** Filter events by user for collaborative environments
-
-**Common Use Cases:**
-- Customize interface for personal/team preferences
-- Collaborate on shared calendars
-- Ensure accessibility across devices
-- Enhance usability with dark mode or preferred time formats`,
-    isExpanded: false,
-  },
-  {
-    id: "overtime-app",
-    title: "Calculation of Overtime Hours",
-    period: { start: "04.2024", end: "06.2024" },
-    link: "#",
-    skills: [
-      "Electron.js",
-      "React.js",
-      "Node.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "SQLite",
-    ],
-    description: `## 🏁 Introduction
-A desktop application for tracking and managing overtime hours. Built with React, Node.js, and ElectronJS for cross-platform support.
-
-## ✨ Key Features
-- ⏱️ Track overtime hours efficiently
-- 📝 Add, edit, and remove overtime entries
-- 💻 Cross-platform desktop app
-- 📊 Generate summaries and reports
-- 🎨 Modern UI with Tailwind CSS
-- 🔒 Local database storage with SQLite
-
-## 🧩 Core Concepts
-- 💡 Data-Centric Management: Store and calculate overtime accurately
-- 🎨 User-Friendly Interface: Easy navigation & clear UI
-- 🔒 Secure Local Storage: Data stored safely in SQLite`,
-    isExpanded: false,
-  },
-  {
-    id: "atos-doc-management",
-    title: "Administrative Document Management at Atos",
-    period: { start: "06.2024", end: "08.2024" },
-    link: "#",
-    skills: [
-      "Next.js",
-      "Prisma",
-      "SQLite",
-      "TypeScript",
-      "Tailwind CSS",
-      "Git",
-      "GitHub",
-      "DOCX",
-    ],
-    description: `## 🏁 Introduction
-An administrative document management system built for Atos, enabling secure creation, management, and storage of documents.
-
-## ✨ Key Features
-- 📄 Create, edit, delete, search documents
-- 👥 User authentication and authorization
-- 📝 Generate and export DOCX files
-- 🎨 Clean and responsive UI with Tailwind & ShadCN
-- 🔗 Integrated with Prisma & SQLite for database management
-
-## 🧩 Core Concepts
-- 💡 Document-Centric Design: Focus on easy management and retrieval
-- 🔒 Secure Access: Role-based permissions and authentication
-- 📊 Efficient Storage: Local database for fast performance`,
-    isExpanded: false,
-  },
-  {
-    id: "school-management-system",
-    title: "School Management System",
-    period: { start: "03.2023", end: "06.2023" },
-    link: "#",
-    skills: [
-      "Laravel",
-      "React.js",
+      "Java 17",
+      "Spring Boot (Web, Data JPA, Validation)",
+      "Hibernate / JPA",
       "MySQL",
-      "Tailwind CSS",
-      "Git",
-      "GitHub",
-      "JWT",
+      "Lombok",
+      "MapStruct",
+      "Maven",
+      "Docker",
+      "Postman (tests API)",
+      "Swagger",
     ],
-    description: `## 🏁 Introduction
-A full-featured school management system built with Laravel and React, managing students, teachers, courses, and timetables.
+    description: `Application web backend pour gérer clients, produits et commandes avec un système de fidélité automatique.
 
-## ✨ Key Features
-- 🏫 Student, Teacher, and Course Management
-- 📅 Timetable creation and management
-- 🔒 Authentication with JWT
-- 🎨 Modern responsive UI with Tailwind CSS
-- 🔗 Full frontend-backend decoupled architecture
+ Fonctionnalités principales
+- Gestion des clients (CRUD)
+- Gestion des produits et catégories
+- Gestion des commandes
+- Système de fidélité automatique (points / remises)
+- Validation des données et gestion des erreurs
+- Documentation de l’API avec Swagger
 
-## 🧩 Core Concepts
-- 💡 Role-Based Access: Teachers, Admins, and Students
-- 📊 Efficient Data Management: MySQL-backed system
-- 🎨 Interactive UI: React components for smooth navigation`,
+Aspects techniques
+- Architecture REST avec Spring Boot
+- Architecture en couches (Controller, Service, Repository, DTO)
+- Persistance des données avec JPA / Hibernate
+- Mapping DTO ↔ Entity avec MapStruct
+- Validation des données avec annotations
+- Tests des endpoints avec Postman
+- Conteneurisation avec Docker
+- Base de données relationnelle MySQL`,
     isExpanded: false,
   },
   {
-    id: "freelance-project",
-    title: "Freelance Projects",
-    period: { start: "01.2023" },
-    link: "#",
+    id: "gestion-reservations-salles",
+    title: "Gestion Réservations Salles",
+    period: {
+      start: "2025",
+      isOngoing: true,
+    },
+    github: "https://github.com/Mohsen-Elrhazi/Gestion-Reservation-Salles..git",
     skills: [
-      "React.js",
-      "Next.js",
-      "Node.js",
-      "Laravel",
-      "Spring Boot",
-      "MySQL",
-      "Tailwind CSS",
-      "TypeScript",
+      "Java 17",
+      "Spring Boot (Web, Data JPA, Security)",
+      "Hibernate / JPA",
+      "MySQL / PostgreSQL",
+      "Docker & Docker Compose",
+      "JWT Authentication",
+      "Spring Security",
+      "JUnit 5 / Mockito",
+      "CI/CD (GitHub Actions / Jenkins)",
+      "Elasticsearch & Kibana",
+      "SonarQube & JaCoCo",
+      "UML",
     ],
-    description: `## 🏁 Introduction
-Various freelance web development projects for clients, ranging from dashboards to full-stack applications.
+    description: `Application web backend pour gérer les réservations des salles de conférences au sein d'une organisation.
 
-## ✨ Key Features
-- 🌐 Web applications, admin panels, dashboards
-- ⚡ Custom features & third-party integrations
-- 🎨 Modern UI/UX using Tailwind and React
-- 🔗 Full-stack solutions with Node.js, Laravel, and MySQL
+Fonctionnalités principales
+- Gestion des employés (CRUD)
+- Gestion des salles et équipements (CRUD)
+- Création et suivi des réservations
+- Validation, annulation et suivi des statuts
+- Authentification et autorisation avec rôles (EMPLOYE / ADMIN)
+- Gestion des erreurs centralisée
+- Observabilité et logs avec Elasticsearch & Kibana
+- Déploiement conteneurisé avec Docker et CI/CD automatisé
 
-## 🧩 Core Concepts
-- 💡 Client-Focused Development: Tailored solutions per client needs
-- 🔄 Full-Stack Architecture: Clean separation of frontend & backend
-- 🎨 Modern Design Principles: Reusable and responsive components`,
+Aspects techniques
+- Architecture multi-couches (Controller, Service, Repository, DTO)
+- Persistance avec JPA / Hibernate
+- API REST sécurisée avec Spring Security & JWT
+- Tests unitaires et d’intégration (JUnit 5 / Mockito / Spring Boot Test)
+- Intégration CI/CD avec Jenkins / GitHub Actions
+- Analyse de qualité du code avec SonarQube & couverture avec JaCoCo
+- Conteneurisation avec Docker & Docker Compose
+- Observabilité avec Elasticsearch & Kibana`,
     isExpanded: false,
   },
+  {
+    id: "cineHub",
+    title: "CinéHub - Gestion Catalogue de Films",
+    period: {
+      start: "2025",
+      isOngoing: true, // projet en cours, modifie si nécessaire
+    },
+    github: "https://github.com/Mohsen-Elrhazi/brief4_Gestion_Catalogue_Films.git",
+    skills: [
+      "Java 17",
+      "Spring Core",
+      "Spring MVC / REST",
+      "Spring Data JPA",
+      "JPA / Hibernate",
+      "MySQL / PostgreSQL",
+      "DTOs et Mappeurs",
+      "Gestion des exceptions",
+      "JUnit 5 / Mockito",
+      "Git",
+      "UML",
+      "Agilité (Scrum / Kanban)",
+      "Web Services",
+    ],
+    description: `Application web backend pour gérer un catalogue de films de manière centralisée.
+
+Fonctionnalités principales
+- Gestion des films (CRUD, recherche par titre/année/catégorie, filtrage)
+- Gestion des réalisateurs (CRUD, filmographie complète)
+- Gestion des catégories (CRUD, consultation des films par catégorie)
+- Validation des règles métiers (film unique par réalisateur et catégorie, note et durée valides)
+- Gestion centralisée des exceptions
+- Tests unitaires et d’intégration avec DTOs
+
+Aspects techniques
+- Architecture MVC multi-couches (Repository / Service / Controller)
+- Persistance avec JPA / Hibernate
+- Injection de dépendances avec Spring Core
+- API REST sécurisée et modulable
+- Base de données relationnelle (MySQL / PostgreSQL)
+- Gestion des dates avec Java Time API
+- Configuration via annotations et XML (applicationContext.xml)
+- Développement suivant les bonnes pratiques OOP et Spring`,
+    isExpanded: false,
+  },
+  {
+    id: "hopitalNumerique",
+    title: "Hôpital Numérique - Gestion Clinique Digitale",
+    period: {
+      start: "2025",
+    },
+    github: "https://github.com/Mohsen-Elrhazi/brief3_CliniqueDigitale.git",
+    skills: [
+      "Java EE / Jakarta EE",
+      "Servlets / JSP / JSTL",
+      "JPA / Hibernate",
+      "MySQL",
+      "MVC multi-couches",
+      "Gestion des sessions",
+      "Java Time API",
+      "Gestion des exceptions",
+      "Git",
+      "UML",
+      "JSON",
+    ],
+    description: `Application web JEE pour gérer une clinique digitale de façon centralisée, couvrant les besoins des patients, docteurs et administrateurs.
+
+Fonctionnalités principales
+- Patients : création et gestion de compte, consultation des docteurs par département, réservation/annulation/modification de consultations, consultation de l'historique médical.
+- Docteurs : consultation du planning, validation ou refus de réservations, saisie de comptes rendus médicaux, mise à jour de l'état des consultations.
+- Administration : gestion des départements, des docteurs et des salles, supervision des réservations et consultations, génération de statistiques globales.
+
+Aspects techniques
+- Architecture MVC multi-couches (Repository / Service / Controller / Vue)
+- Persistance avec JPA / Hibernate
+- Sécurité et gestion des sessions avec HttpSession et Filters
+- JSP et JSTL pour les vues dynamiques
+- CSS / Bootstrap pour le style et la responsivité
+- Gestion des exceptions et règles métiers (créneaux de 30 minutes, réservation unique par créneau)
+- Développement suivant les bonnes pratiques de la POO et Java EE`,
+    isExpanded: false,
+  },
+  {
+  id: "chatAppLaravel",
+  title: "Application de Chat - Laravel",
+  period: {
+    start: "2024",
+    end: "2025",},
+  github: "https://github.com/Mohsen-Elrhazi/projet_fil_rouge.git",
+  skills: [
+    "Laravel",
+    "PHP",
+    "Tailwind CSS",
+    "JavaScript",
+    "WebSocket",
+    "Pusher",
+    "MySQL",
+    "Docker",
+    "Gestion en temps réel",
+    "MVC multi-couches",
+    "Git"
+  ],
+  description: `Application web de messagerie instantanée permettant aux utilisateurs de communiquer en temps réel.
+
+Fonctionnalités principales
+- Authentification et gestion des comptes utilisateurs.
+- Messagerie instantanée en temps réel avec WebSocket / Pusher.
+- Création et gestion de discussions.
+- Historique des conversations consultable.
+- Interface responsive avec Tailwind CSS.
+
+Aspects techniques
+- Backend avec Laravel (MVC multi-couches) et gestion des routes, contrôleurs et modèles.
+- Frontend interactif avec JavaScript et Tailwind CSS.
+- Persistance des messages et utilisateurs dans MySQL.
+- WebSocket / Pusher pour la communication temps réel.
+- Conteneurisation avec Docker pour faciliter le déploiement.
+- Suivi des bonnes pratiques OOP et sécurisation des routes et données.`,
+  isExpanded: false,
+},
+{
+  id: "apiCandidatures",
+  title: "API REST de Gestion des Candidatures",
+  period: {
+    start: "2025",
+  },
+  github: "https://github.com/Mohsen-Elrhazi/Gestion_Gandidats_Laravel_REST_API_Part2.git",
+  skills: [
+    "Laravel 10",
+    "PHP",
+    "MySQL",
+    "JWT (jwt-auth) / Sanctum",
+    "Gestion des rôles et permissions",
+    "Export Excel / CSV",
+    "Swagger / Postman",
+    "Git",
+    "API REST",
+    "UML",
+  ],
+  description: `API REST pour la gestion des candidatures, permettant aux candidats, recruteurs et administrateurs de gérer les utilisateurs, offres et candidatures de manière centralisée et sécurisée.
+
+Fonctionnalités principales
+- Gestion des utilisateurs : inscription, authentification (JWT/Sanctum), mise à jour du profil, ajout de compétences.
+- Gestion des CVs : upload (PDF/DOCX, max 5MB), stockage local.
+- Gestion des offres d'emploi : CRUD, filtrage (catégorie, localisation, type de contrat), postuler à plusieurs offres en un clic.
+- Candidatures : postuler à une offre, e-mails de confirmation automatiques, suivi des statuts.
+- Export des données : génération de rapports CSV/Excel pour les recruteurs.
+- Gestion des rôles et permissions : Candidat, Recruteur, Admin, avec contrôle d'accès via Gates & Policies.
+
+Aspects techniques
+- Architecture MVC avec Laravel / Lumen
+- Sécurisation via JWT avec middleware personnalisé
+- Queues pour traitement asynchrone (emails, export, analyse CV)
+- Documentation API via Swagger ou Postman
+- Tests unitaires et fonctionnels avec PHPUnit / Pest
+- Base de données relationnelle MySQL / PostgreSQL avec relations optimisées
+- Développement suivant les bonnes pratiques OOP et Laravel`,
+  isExpanded: false,
+},
+{
+  id: "navettesAutocars",
+  title: "Plateforme de Gestion des Navettes des Autocars",
+  period: {
+    start: "2025",
+  },
+  github: "https://github.com/Mohsen-Elrhazi/Eventbrite.git",
+  skills: [
+    "Laravel 10",
+    "PHP",
+    "PostgreSQL",
+    "Gestion des rôles et permissions",
+    "Docker",
+    "MVC multi-couches",
+    "Git",
+    "UML"
+  ],
+  description: `Plateforme web pour gérer les offres de navettes des autocars, permettant aux sociétés de transport de créer des offres et aux utilisateurs de s'abonner.
+
+Fonctionnalités principales
+- Création d'offres par les sociétés de transport : navettes entre deux villes, période d'abonnement, horaires, capacité, description de l'autocar.
+- Consultation des offres par les utilisateurs avec statut (valide/fermée).
+- Abonnement des utilisateurs selon les places disponibles.
+- Demande d'abonnement pour futures navettes avec gestion des duplications.
+- Consultation des demandes par les sociétés pour connaître l'intérêt des utilisateurs.
+
+Aspects techniques
+- Framework Laravel avec architecture MVC multi-couches
+- Conteneurisation avec Docker pour un déploiement facile
+- Base de données relationnelle PostgreSQL
+- Diagrammes UML pour cas d'utilisation et diagrammes de classes`,
+  isExpanded: false,
+},
+{
+  id: "youdemyClone",
+  title: "Plateforme de Cours en Ligne Youdemy",
+  period: {
+    start: "2025",
+  },
+  github: "https://github.com/Mohsen-Elrhazi/Youdemy-sc2.git",
+  skills: [
+    "PHP natif",
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "MySQL",
+    "Responsive Design",
+    "OOP / Polymorphisme",
+    "Gestion des rôles et permissions",
+    "MVC",
+    "UML",
+    "Git"
+  ],
+  description: `Plateforme de cours en ligne permettant aux étudiants et enseignants de gérer les cours, inscriptions et statistiques dans un environnement interactif.
+
+Fonctionnalités principales
+
+Front Office :
+- Visiteur : accès au catalogue des cours, recherche par mots-clés, création de compte (Étudiant ou Enseignant).
+- Étudiant : visualisation et recherche de cours, inscription aux cours, accès à "Mes cours".
+- Enseignant : ajout, modification et suppression de cours, gestion des inscriptions, consultation des statistiques des cours.
+
+Back Office :
+- Administrateur : validation des comptes enseignants, gestion des utilisateurs (activation, suspension, suppression), gestion des contenus (cours, catégories, tags), statistiques globales (nombre de cours, répartition, top enseignants).
+
+
+Aspects techniques
+- Architecture modulaire basée sur OOP en PHP natif
+- Base de données MySQL
+- Design responsive avec HTML5, CSS3 et JavaScript
+- Diagrammes UML pour modélisation des entités et relations`,
+  isExpanded: false,
+},
+{
+  id: "streamingDB",
+  title: "Gestion d'une Base de Données de Service de Streaming de Films",
+  period: {
+    start: "2024",
+  },
+  github: "https://github.com/Mohsen-Elrhazi/brief_1_sprint_3.git", 
+  skills: [
+    "SQL",
+    "MySQL",
+    "Conception de base de données",
+    "ERD",
+    "Relations Many-to-Many",
+    "Requêtes avancées (JOIN, GROUP BY, CTE)",
+    "Triggers",
+    "Agrégation et statistiques",
+    "Analyse de données",
+    "Git"
+  ],
+  description: `Conception et gestion d'une base de données pour un service de streaming de films afin de suivre les utilisateurs, les films, les abonnements, l'historique de visionnage et les critiques.
+
+Fonctionnalités principales
+- Gestion des utilisateurs et de leurs abonnements.
+- Suivi de l'historique de visionnage et du pourcentage de complétion des films.
+- Gestion des films et de leurs genres.
+- Calcul de statistiques : films les mieux notés, genres les plus regardés, comportements des utilisateurs.
+- Écriture de requêtes SQL avancées : INSERT, SELECT, JOIN, GROUP BY, sous-requêtes, CTE, triggers.
+
+`,
+  isExpanded: false,
+},
+{
+  id: "futChampionsApp",
+  title: "Copie de FUT Champions Web App Ultimate Team",
+  period: {
+    start: "2024",
+  },
+  link: "https://mohsen-elrhazi.github.io/brief_3_sprint_2/", 
+  github: "https://github.com/Mohsen-Elrhazi/brief_3_sprint_2.git",
+  skills: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "JSON",
+    "UX",
+    "UI",
+    "Responsive Design",
+    "Git"
+  ],
+  description: `Application web pour gérer une équipe FUT (Ultimate Team) pour EA FC 25. 
+Les utilisateurs peuvent créer, personnaliser et gérer leurs formations et équipes via une interface interactive.
+
+Fonctionnalités principales
+- Ajout, modification et suppression des joueurs via un formulaire dynamique.
+- Positionnement automatique des joueurs selon la formation choisie (ex : 4-3-3, 4-4-2).
+- Gestion de la formation principale et des réservistes.
+- Validation des champs de saisie pour garantir la cohérence des données.
+- Interface responsive adaptée aux desktops, tablettes et mobiles.`,
+  isExpanded: false,
+},
+{
+  id: "reservationApp",
+  title: "Réservation - Page Interactive",
+  period: {
+    start: "2024",
+  },
+  link: "https://mohsen-elrhazi.github.io/brief_2_Sprint2/", 
+  github: "https://github.com/Mohsen-Elrhazi/brief_2_Sprint2.git",
+  skills: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Responsive Design",
+    "UI/UX",
+    "Framework CSS",
+    "PDF Generation (Bonus)"
+  ],
+  description: `Page web interactive pour gérer des réservations étape par étape. 
+Les utilisateurs peuvent sélectionner les gares de départ et d'arrivée, choisir une date, le nombre de voyageurs et leurs places.
+
+Fonctionnalités principales
+- Processus de réservation multi-étapes guidé et intuitif.
+- Visualisation des résultats avec détails horaires et compagnies.
+- Sélection des places pour adultes et enfants.
+- Génération d'un ticket final incluant les informations personnelles et un code QR.
+- Bonus : génération automatique de tickets PDF à partir des réservations.`,
+  isExpanded: false,
+},
+{
+  id: "task-scheduler",
+  title: "Task Scheduler",
+  period: {
+    start: "2024",
+  },
+  link: "https://mohsen-elrhazi.github.io/brief_4/", 
+  github: "https://github.com/Mohsen-Elrhazi/brief_4.git", 
+  skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "DOM Manipulation"],
+  description: `
+Créer une application interactive de gestion de tâches permettant aux utilisateurs de :
+
+Fonctionnalités principales
+- Ajouter une tâche avec une description et une date limite
+- Visualiser toutes les tâches et leur état d’avancement
+- Marquer les tâches comme "terminées" et supprimer les tâches finies
+- Recevoir des indications visuelles (couleurs ou icônes) pour identifier les tâches en retard ou à venir
+- Structurer le code en modules clairs et réutilisables pour faciliter la maintenance
+  `,
+},
+{
+  id: "dynamic-class-website",
+  title: "Site Web Dynamique de Classe",
+  period: {
+    start: "09.2024",
+    end: "10.2024",
+    isOngoing: false,
+  },
+  link: "https://mohsen-elrhazi.github.io/Ycode/Briefs/brief_1/index.html", 
+  github: "https://github.com/Mohsen-Elrhazi/Ycode/tree/master/Briefs/brief_1", 
+  skills: ["HTML5", "CSS3","Bootstrap", "Navigation", "UI/UX", "Figma"],
+  description: `
+Transformer une page web statique en un site web dynamique interconnecté
+pour améliorer la navigation et l'organisation du contenu.
+
+Fonctionnalités principales
+- Accueil : Présentation de la classe, description, image représentative
+- Règles et Stratégies : Liste des règles et conseils pour réussir dans la classe
+- Contact : Formulaire de contact avec nom, email, message et informations supplémentaires
+  `,
+},
+
+
 ];

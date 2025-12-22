@@ -15,6 +15,7 @@ import { TeckStack } from "@/features/profile/components/teck-stack";
 import { USER } from "@/features/profile/data/user";
 import { cn } from "@/lib/utils";
 import { Educations } from "@/features/profile/components/educations";
+import { Awards } from "@/features/profile/components/awards";
 
 export default function Page() {
   return (
@@ -55,14 +56,14 @@ export default function Page() {
         <Projects />
         <Separator />
 
-        {/*<Awards />*/}
-        {/*<Separator />*/}
+        {/* <Awards />
+        <Separator /> */}
 
         <Certifications />
         <Separator />
 
-        <Brand />
-        <Separator />
+        {/* <Brand /> */}
+        {/* <Separator /> */}
       </div>
     </>
   );

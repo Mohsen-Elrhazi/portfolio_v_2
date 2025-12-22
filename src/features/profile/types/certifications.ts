@@ -14,7 +14,7 @@ export type Certification = {
   /**
    * Issue date in ISO format (YYYY-MM-DD). Parsed and formatted in the UI via Day.js.
    */
-  issueDate: string;
+  issueDate?: string;
   /**
    * Certificate or credential identifier; leave empty if not applicable.
    */

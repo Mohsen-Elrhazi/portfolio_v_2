@@ -21,6 +21,9 @@ export type ExperiencePosition = {
    /** Location of the position (city, country, remote, etc.) */
   location?: string;
 
+  /** School or institution name for educational experiences. */
+  school?: string;
+
   description?: string;
   /** UI icon to represent the role type. */
   icon?: ExperiencePositionIcon;

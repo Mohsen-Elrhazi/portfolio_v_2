@@ -9,7 +9,7 @@ export function SiteFooter() {
   return (
     <footer className="max-w-screen overflow-x-hidden px-2">
       <div className="screen-line-before mx-auto border-x border-edge pt-4 md:max-w-3xl">
-        <p className="mb-1 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
+        {/* <p className="mb-1 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
           Inspired by tailwindcss.com & ui.shadcn.com &{" "}
           <a
             className="link"
@@ -19,17 +19,17 @@ export function SiteFooter() {
           >
             ncdai
           </a>
-        </p>
+        </p> */}
 
         <p className="mb-4 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
-          Built by{" "}
+            Développé par{" "}
           <a
             className="link"
-            href="https://github.com/yassir-jeraidi"
+            href="https://github.com/Mohsen-Elrhazi"
             target="_blank"
             rel="noopener"
           >
-            yassir-jeraidi
+            Mohsen Elrhazi
           </a>
         </p>
 

@@ -11,9 +11,12 @@ export type Project = {
     start: string;
     /** End date; leave undefined for "Present". */
     end?: string;
+    /** Whether the project is ongoing. */
+    isOngoing?: boolean;
   };
   /** Public URL (site, repository, demo, or video). */
-  link: string;
+  link?: string; // maintenant optionnel
+  github?: string; // nouveau champ pour GitHub
   /** Tags/technologies for chips or filtering. */
   skills: string[];
   /** Optional rich description; Markdown and line breaks supported. */
