@@ -1,41 +1,42 @@
 export function MEMark(props: React.ComponentProps<"svg">) {
   return (
-    <svg 
-  xmlns="http://www.w3.org/2000/svg" 
-  fill="none" 
-  viewBox="0 0 256 128"
-  {...props}
->
-  {/* Lettre M : Deux piliers et un bloc central au milieu haut */}
-  <path 
-    fill="currentColor" 
-    d="M0 0h32v128H0V0ZM96 0h32v128H96V0ZM32 32h32v32H32V32ZM64 32h32v32H64V32Z" 
-  />
-
-  {/* Lettre E : Une barre verticale et trois barres horizontales */}
-  <path 
-    fill="currentColor" 
-    d="M160 0h32v128h-32V0ZM192 0h64v32h-64V0ZM192 48h48v32h-48V48ZM192 96h64v32h-64V96Z" 
-  />
-</svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="262.912 283.392 512 458.752"
+      version="1.0"
+      {...props}
+    >
+      <g
+        stroke="none"
+        fill="#000000"
+        transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
+      >
+        <path
+          d="M6441 7259 c-54 -10 -111 -47 -144 -91 -13 -18 -116 -197 -227 -398&#10;-260 -469 -504 -905 -640 -1145 -59 -104 -113 -209 -120 -232 -23 -75 -9 -113&#10;145 -394 80 -145 186 -342 237 -436 51 -95 95 -173 98 -173 3 0 68 114 145&#10;252 77 138 190 340 250 447 163 288 290 519 316 574 19 38 25 44 31 30 3 -10&#10;7 -618 7 -1351 l1 -1333 408 3 c395 3 408 4 447 25 51 27 79 57 104 113 20 45&#10;21 54 21 1990 0 1862 -1 1947 -19 1985 -10 22 -33 56 -52 74 -66 67 -58 66&#10;-534 68 -236 1 -450 -3 -474 -8z"
+        />
+        <path
+          d="M2890 7244 c-45 -20 -86 -59 -113 -109 l-22 -40 0 -1955 0 -1955 22&#10;-40 c12 -22 36 -54 55 -72 63 -61 79 -63 509 -63 l389 0 0 1348 0 1347 91&#10;-165 c51 -91 220 -397 377 -680 157 -283 363 -657 459 -830 140 -253 184 -324&#10;223 -362 71 -66 122 -81 268 -76 186 6 219 31 354 269 95 167 115 228 100 297&#10;-10 42 -169 339 -590 1102 -129 234 -326 592 -437 795 -111 204 -279 510 -372&#10;680 -94 171 -182 333 -197 362 -35 70 -82 122 -131 144 -37 17 -76 19 -495 18&#10;-384 0 -460 -2 -490 -15z"
+        />
+      </g>
+    </svg>
   );
 }
 
 export function getMarkSVG(color: string) {
-  return `<svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      fill="none" 
-      viewBox="0 0 256 128"
-      className={className}
-    >
-      <path 
-        fill=${color} 
-        d="M0 0h32v64H0V0ZM64 0h32v64H64V0ZM32 64h32v64H32V64Z"
-      />
-      
-      <path 
-        fill={color} 
-        d="M160 0h64v32h-64V0ZM192 32h32v64h-32V32ZM160 96h64v32h-64V96Z"
-      />
-    </svg>`;
+  // return `<svg
+  //     xmlns="http://www.w3.org/2000/svg"
+  //     fill="none"
+  //     viewBox="0 0 256 128"
+  //     className={className}
+  //   >
+  //     <path
+  //       fill=${color}
+  //       d="M0 0h32v64H0V0ZM64 0h32v64H64V0ZM32 64h32v64H32V64Z"
+  //     />
+  //     <path
+  //       fill={color}
+  //       d="M160 0h64v32h-64V0ZM192 32h32v64h-32V32ZM160 96h64v32h-64V96Z"
+  //     />
+  //   </svg>`;
 }

@@ -4,6 +4,8 @@ import { useMotionValueEvent, useScroll } from "motion/react";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
+import { HeaderLogo } from "./header-logo";
+import { EMark } from "./e-mark";
 import { MEMark } from "./m-e-mark";
 
 const calcDistance = (el: HTMLElement) => {
@@ -39,15 +41,19 @@ function ChanhDaiMarkMotion() {
   }, []);
 
   return (
-    <MEMark
-      data-visible={visible}
-      className="translate-y-2 opacity-0 transition-[opacity,translate] duration-300 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
-    />
+    <HeaderLogo visible={visible} />
   );
 }
 
 export function SiteHeaderMark() {
   const pathname = usePathname();
   const isHome = ["/", "/index"].includes(pathname);
-  return isHome ? <ChanhDaiMarkMotion /> : <MEMark />;
+return isHome ? (
+  <ChanhDaiMarkMotion />
+) : (
+  <div className="flex items-center ">
+    <MEMark className="" />
+    <EMark className="" />
+  </div>
+);
 }

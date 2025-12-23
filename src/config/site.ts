@@ -1,5 +1,7 @@
 import { USER } from "@/features/profile/data/user";
 import type { NavItem } from "@/types/nav";
+// import ClockTimer from "@/components/ClockTimer"; // on va créer ce composant
+
 
 export const SITE_INFO = {
   name: USER.displayName,
@@ -15,10 +17,10 @@ export const META_THEME_COLORS = {
 };
 
 export const MAIN_NAV: NavItem[] = [
-  {
-    title: "Mohsen Elrhazi",
-    href: "/",
-  },
+  // {
+  //   title: "Mohsen Elrhazi",
+  //   href: "/",
+  // },
   // {
   //   title: "Blog",
   //   href: "/blog",

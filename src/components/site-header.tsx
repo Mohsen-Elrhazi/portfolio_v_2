@@ -8,7 +8,11 @@ import { cn } from "@/lib/utils";
 
 import { SiteHeaderMark } from "./site-header-mark";
 import { SiteHeaderWrapper } from "./site-header-wrapper";
-import { ToggleTheme } from "./toggle-theme";
+// import { ToggleTheme } from "./toggle-theme";
+import { ThemeToggle } from "./theme-toggle";
+
+import ClockTimer from "@/components/Clock-timer"; // on va créer ce composant
+
 
 const BrandContextMenu = dynamic(() =>
   import("@/components/brand-context-menu").then((mod) => mod.BrandContextMenu)
@@ -42,16 +46,20 @@ export function SiteHeader() {
             <SiteHeaderMark />
           </Link>
         </BrandContextMenu>
+        {/* <ClockTimer /> */}
 
         <div className="flex-1" />
 
         <DesktopNav items={MAIN_NAV} />
 
         <div className="flex items-center gap-2">
-          {/*<CommandMenu posts={posts} />*/}
-          {/*<NavItemGitHub />*/}
-          <ToggleTheme />
-          <MobileNav className="sm:hidden" items={MAIN_NAV} />
+          {/* <CommandMenu posts={posts} /> */}
+          {/* <NavItemGitHub /> */}
+        <ClockTimer />
+          <span className="mx-2 flex h-4 w-px bg-border" />
+
+          <ThemeToggle />
+          {/* <MobileNav className="sm:hidden" items={MAIN_NAV} /> */}
         </div>
       </div>
     </SiteHeaderWrapper>

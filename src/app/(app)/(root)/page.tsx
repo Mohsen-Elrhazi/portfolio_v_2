@@ -29,6 +29,8 @@ export default function Page() {
 
       <div className="mx-auto md:max-w-3xl">
         <ProfileCover />
+        {/* <Separator /> */}
+
         <ProfileHeader />
         <Separator />
 
