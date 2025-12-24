@@ -55,7 +55,7 @@ const MENU_LINKS: CommandLinkItem[] = [
   {
     title: "Daifolio",
     href: "/",
-    icon: MEMark,
+    icon: MMark,
   },
   {
     title: "Blog",
