@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import dayjs from "dayjs";
 import type { ProfilePage as PageSchema, WithContext } from "schema-dts";
 
