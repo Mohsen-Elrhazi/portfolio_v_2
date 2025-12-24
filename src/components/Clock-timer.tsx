@@ -17,7 +17,8 @@ export default function ClockTimer() {
 
   return (
     <div className="rounded text-sm">
-      Casablanca, Maroc {time.toLocaleTimeString("fr-FR")}
+      {/* Casablanca, Maroc {time.toLocaleTimeString("fr-FR")} */}
+      {time.toLocaleTimeString("fr-FR")}
     </div>
   );
 }
