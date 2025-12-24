@@ -23,7 +23,7 @@ export function MMark(props: React.ComponentProps<"svg">) {
   );
 }
 
-export function getMarkSVG(color: string) {
+export function getMarkSVG(color: string): string {
   return `<svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
