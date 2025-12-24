@@ -2,31 +2,38 @@ import type { Certification } from "../types/certifications";
 
 export const CERTIFICATIONS: Certification[] = [
   {
-    title: "SQL Intermediate",
-    issuer: "SoloLearn",
-    // issuerIconName: "hackerrank",
-    issueDate: "2025-01-28",
-    credentialID: "CC-MUMEGRNQ",
-    credentialURL:
-      "https://www.sololearn.com/certificates/CC-MUMEGRNQ",
-  },
-  {
-    title: " Introduction to SQL",
-    issuer: "SoloLearn",
-    // issuerIconName: "sololearn",
-    issueDate: "2025-03-11",
-    credentialID: "CC-DIXX3JJY",
-    credentialURL: "https://www.sololearn.com/certificates/CC-DIXX3JJY",
-  },
-  {
     title: "Java SE 17 Developer (OCP)",
     issuer: "Oracle",
     issuerIconName: "oracle",
     issueDate: "",
     credentialID: "",
-    credentialURL:
-      "",
+    credentialURL: "",
   },
+  {
+    title: "SQL Intermediate",
+    issuer: "Sololearn",
+    // issuerIconName: "hackerrank",
+    issueDate: "2025-01-28",
+    credentialID: "CC-MUMEGRNQ",
+    credentialURL: "https://www.sololearn.com/certificates/CC-MUMEGRNQ",
+  },
+  {
+    title: " Introduction to SQL",
+    issuer: "Sololearn",
+    // issuerIconName: "sololearn",
+    issueDate: "2024-12-11",
+    credentialID: "CC-DIXX3JJY",
+    credentialURL: "https://www.sololearn.com/certificates/CC-DIXX3JJY",
+  },
+  // {
+  //   title: "Java SE 17 Developer (OCP)",
+  //   issuer: "Oracle",
+  //   issuerIconName: "oracle",
+  //   issueDate: "",
+  //   credentialID: "",
+  //   credentialURL:
+  //     "",
+  // },
   // {
   //   title: "Introduction to Python",
   //   issuer: "365 Data Science",
