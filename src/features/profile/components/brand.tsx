@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 
-import { MEMark } from "@/components/m-e-mark";
+import { MEMark } from "@/components/m-mark";
 import { ChanhDaiWordmark } from "@/components/chanhdai-wordmark";
 
 import { Panel, PanelHeader, PanelTitle } from "./panel";

@@ -35,7 +35,7 @@ import { useSound } from "@/hooks/use-sound";
 import { cn } from "@/lib/utils";
 import { copyText } from "@/utils/copy";
 
-import { MEMark, getMarkSVG } from "./m-e-mark";
+import { MMark, getMarkSVG } from "./m-mark";
 import { getWordmarkSVG } from "./chanhdai-wordmark";
 import { Icons } from "./icons";
 import { Button } from "./ui/button";
@@ -184,7 +184,6 @@ export function CommandMenu() {
     },
     [playClick, setTheme]
   );
-
 
   return (
     <>

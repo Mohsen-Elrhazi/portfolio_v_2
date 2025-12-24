@@ -1,4 +1,4 @@
-export function MEMark(props: React.ComponentProps<"svg">) {
+export function MMark(props: React.ComponentProps<"svg">) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,10 +6,10 @@ export function MEMark(props: React.ComponentProps<"svg">) {
       viewBox="262.912 283.392 512 458.752"
       version="1.0"
       {...props}
+      fill="currentColor" 
     >
       <g
         stroke="none"
-        fill="#000000"
         transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
       >
         <path

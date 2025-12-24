@@ -9,20 +9,19 @@ export const USER: User = {
   pronouns: "he/him",
   bio: "Creating with code. Small details matter.",
   flipSentences: [
+    "Technicien Supérieur",
     "Développeur Full Stack",
-    "Software engineer",
-    "Frontend engineer",
-    "Backend engineer",
-    "Cloud engineer",
+   "Développeur Frontend",
+    "Développeur Backend",
   ],
   address: "Youssoufia, Maroc",
   phoneNumber: "KzIxMiA2MDQ1NTY0ODc=", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "ZWxyaGF6aS5tb2hzZW4uZGV2QGdtYWlsLmNvbQ==", // base64 encoded
   website: "https://elrhazi.tech",
-  jobTitle: "Full stack Engineer",
+  jobTitle: "Développeur Full Stack",
   jobs: [
     {
-      title: "Développeur Full Stack ",
+      title: "Développeur Full Stack",
       company: "Youcode - UM6P",
       website: "https://youcode.ma/",
     },

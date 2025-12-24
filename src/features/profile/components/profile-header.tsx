@@ -20,7 +20,9 @@ export function ProfileHeader() {
           />
         </div>
 
-        <SimpleTooltip content="I'm from Morocco">
+        {/* <SimpleTooltip content="I'm from Morocco"> */}
+        <SimpleTooltip content="Maroc">
+
           {/* Flag of Morocco */}
 
           <svg
@@ -58,7 +60,7 @@ export function ProfileHeader() {
           <h1 className="flex items-center pl-4 text-3xl font-semibold">
             {USER.displayName}
             &nbsp;
-            <SimpleTooltip content="Verified">
+            <SimpleTooltip content="Vérifié">
               <VerifiedIcon className="size-[0.6em] translate-y-px text-info select-none" />
             </SimpleTooltip>
             {USER.namePronunciationUrl && (

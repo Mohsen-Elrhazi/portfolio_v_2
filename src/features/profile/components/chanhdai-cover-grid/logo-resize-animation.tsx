@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 
-import { MEMark } from "@/components/m-e-mark";
+import { MEMark } from "@/components/m-mark";
 
 const variants = {
   show: {

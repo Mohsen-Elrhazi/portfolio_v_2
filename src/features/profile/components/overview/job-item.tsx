@@ -18,7 +18,7 @@ function getJobIcon(title: string) {
     return LightbulbIcon;
   }
 
-  return BriefcaseBusinessIcon;
+  return CodeXmlIcon;
 }
 
 export function JobItem({
