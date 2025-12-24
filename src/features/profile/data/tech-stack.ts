@@ -66,13 +66,13 @@ export const TECH_STACK: TechStack[] = [
     icon: { light: "/icons_techno/React_light.svg", dark: "/icons_techno/React_dark.svg" },
     theme: true,
   },
-    {
-    key: "vue",
-    title: "Vue.js",
-    categories: ["Frontend", "Library"],
-    icon: { light: "/icons_techno/vue.svg", dark: "/icons_techno/vue.svg" },
-    theme: true,
-  },
+  //   {
+  //   key: "vue",
+  //   title: "Vue.js",
+  //   categories: ["Frontend", "Library"],
+  //   icon: { light: "/icons_techno/vue.svg", dark: "/icons_techno/vue.svg" },
+  //   theme: true,
+  // },
   {
     key: "nextjs",
     title: "Next.js",
