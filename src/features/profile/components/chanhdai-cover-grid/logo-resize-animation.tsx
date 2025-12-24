@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 
-import { MEMark } from "@/components/m-mark";
+import { MMark } from "@/components/m-mark";
 
 const variants = {
   show: {
@@ -65,7 +65,7 @@ export function LogoResizeAnimation({
         {Math.round(width)}x{Math.round(width / 2)}
       </motion.div>
 
-      <MEMark className="size-full text-black dark:text-white" />
+      <MMark className="size-full text-black dark:text-white" />
     </motion.div>
   );
 }

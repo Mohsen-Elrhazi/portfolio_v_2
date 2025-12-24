@@ -4,7 +4,7 @@ import { RepeatIcon } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import React, { useCallback, useEffect, useState } from "react";
 
-import { JYMark } from "@/components/j-y-mark";
+import { MMark } from "@/components/m-mark";
 import { Button } from "@/components/ui/button";
 import { SimpleTooltip } from "@/components/ui/tooltip";
 import { AppleHelloVietnameseEffect } from "@/registry/apple-hello-effect";
@@ -62,7 +62,7 @@ export function Hello() {
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.5 }}
             >
-              <JYMark className="h-12 sm:h-16" />
+              <MMark className="h-12 sm:h-16" />
             </motion.div>
           )}
         </div>
