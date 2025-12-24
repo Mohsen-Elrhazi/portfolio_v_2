@@ -25,7 +25,7 @@ export function SiteFooter() {
             Développé par{" "}
           <a
             className="link"
-            href="https://github.com/Mohsen-Elrhazi"
+            href="https://www.linkedin.com/in/mohsen-elrhazi-13a65b2bb/"
             target="_blank"
             rel="noopener"
           >

@@ -42,7 +42,7 @@ export const EXPERIENCES: Experience[] = [
     positions: [
       {
         id: "mdc-2023",
-        title: "Stagiaire Systèmes & Réseaux",
+        title: "Systèmes & Réseaux",
         employmentPeriod: { start: "07.2023", end: "08.2023" },
         // employmentType: "Full-time",
         location: "Rabat, Maroc",
