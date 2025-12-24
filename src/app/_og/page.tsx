@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { Overview } from "@/features/profile/components/overview";
 import { ProfileHeader } from "@/features/profile/components/profile-header";
 import { cn } from "@/lib/utils";

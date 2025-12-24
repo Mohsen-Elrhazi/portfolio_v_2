@@ -32,6 +32,7 @@ curieux et orienté résultats, je cherche à contribuer à des projets à fort 
 `,
 
   avatar: "mohsen_profile.jpg",
+  // avatar: "mohsen.jpeg",
   ogImage: '' , // "https://assets.chanhdai.com/images/screenshot-og-image-light.png?t=1759581475"
   namePronunciationUrl: "/audio/audio.mp3",
   keywords: ["Elrhazi Mohsen", "elrhazi mohsen", "mohsen elrhazi", ""],
