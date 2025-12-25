@@ -31,8 +31,8 @@ Je suis Mohsen Elrhazi développeur full stack passionné par la conception et l
 curieux et orienté résultats, je cherche à contribuer à des projets à fort impact technologique et humain.
 `,
 
-  avatar: "mohsen_profile.jpg",
-  // avatar: "mohsen.jpeg",
+  // avatar: "mohsen_profile.jpg",
+  avatar: "mohsen.jpeg",
   ogImage: '' , // "https://assets.chanhdai.com/images/screenshot-og-image-light.png?t=1759581475"
   namePronunciationUrl: "/audio/audio.mp3",
   keywords: ["Elrhazi Mohsen", "elrhazi mohsen", "mohsen elrhazi", ""],
