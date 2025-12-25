@@ -20,9 +20,7 @@ export function ProfileHeader() {
           />
         </div>
 
-        {/* <SimpleTooltip content="I'm from Morocco"> */}
         <SimpleTooltip content="Maroc">
-
           {/* Flag of Morocco */}
 
           <svg
@@ -47,14 +45,8 @@ export function ProfileHeader() {
             "flex grow items-end pb-1 pl-4",
             "bg-[repeating-linear-gradient(315deg,var(--pattern-foreground)_0,var(--pattern-foreground)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] [--pattern-foreground:var(--color-edge)]/56"
           )}
-        >
-          <div className="line-clamp-1 font-mono text-xs text-zinc-300 select-none max-sm:hidden dark:text-zinc-800">
-            {/* {"text-3xl "} */}
-            <span className="inline dark:hidden">{/* text-zinc-950 */}</span>
-            <span className="hidden dark:inline">{/* text-zinc-50 */}</span>
-            {/* {" font-medium"} */}
-          </div>
-        </div>
+        ></div>
+     
 
         <div className="border-t border-edge">
           <h1 className="flex items-center pl-4 text-3xl font-semibold">
@@ -74,8 +66,17 @@ export function ProfileHeader() {
             )}
           </h1>
 
-          <div className="h-12 border-t border-edge py-1 pl-4 sm:h-auto">
-            <FlipSentences sentences={USER.flipSentences} />
+          <div className="h-12.5 border-t border-edge py-1 pl-4 sm:h-9">
+            <FlipSentences
+              className="font-mono text-sm text-balance text-muted-foreground"
+              variants={{
+                initial: { y: -10, opacity: 0 },
+                animate: { y: -1, opacity: 1 },
+                exit: { y: 10, opacity: 0 },
+              }}
+            >
+              {USER.flipSentences}
+            </FlipSentences>{" "}
           </div>
         </div>
       </div>
