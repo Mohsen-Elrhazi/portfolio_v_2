@@ -49,15 +49,15 @@ export function ProfileHeader() {
      
 
         <div className="border-t border-edge">
-          <h1 className="flex items-center pl-4 text-3xl font-semibold">
+          <h1 className="flex items-center pl-4 text-2xl sm:text-3xl font-semibold">
             {USER.displayName}
             &nbsp;
-            <SimpleTooltip content="Vérifié">
+            {/* <SimpleTooltip content="Vérifié"> */}
               <VerifiedIcon className="size-[0.6em] translate-y-px text-info select-none" />
-            </SimpleTooltip>
+            {/* </SimpleTooltip> */}
             {USER.namePronunciationUrl && (
               <>
-                &nbsp;
+                &nbsp;                
                 <PronounceMyName
                   className="translate-y-px"
                   namePronunciationUrl={USER.namePronunciationUrl}
