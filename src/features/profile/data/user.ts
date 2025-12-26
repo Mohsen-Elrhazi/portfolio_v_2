@@ -13,6 +13,7 @@ export const USER: User = {
     "Développeur Full Stack",
    "Développeur Frontend",
     "Développeur Backend",
+    // "A la recherche d'une opportunité d'emploi",
   ],
   address: "Youssoufia, Maroc",
   phoneNumber: "KzIxMiA2MDQ1NTY0ODc=", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
@@ -27,8 +28,7 @@ export const USER: User = {
     },
   ],
   about: `
-Je suis Mohsen Elrhazi développeur full stack passionné par la conception et la mise en œuvre de solutions web innovantes. Rigoureux,
-curieux et orienté résultats, je cherche à contribuer à des projets à fort impact technologique et humain.
+Développeur Full Stack, passionné par la conception et la création de solutions web modernes et performantes. Rigoureux, curieux et orienté résultats, je suis actuellement à la recherche d’une opportunité d'emploi pour contribuer à des projets à fort impact et continuer à évoluer techniquement.
 `,
 
   // avatar: "mohsen_profile.jpg",

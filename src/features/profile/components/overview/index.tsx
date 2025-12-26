@@ -1,4 +1,4 @@
-import { GlobeIcon, MapPinIcon , DownloadCloudIcon } from "lucide-react";
+import { GlobeIcon, MapPinIcon , DownloadCloudIcon, FileUser  } from "lucide-react";
 
 import { USER } from "@/features/profile/data/user";
 import { urlToName } from "@/utils/url";
@@ -43,6 +43,7 @@ export function Overview() {
 
         <CvItem
           icon={DownloadCloudIcon}
+          // icon={DownloadCloudIcon}
           content="Consulter mon CV"
           href={USER.cv}
         />

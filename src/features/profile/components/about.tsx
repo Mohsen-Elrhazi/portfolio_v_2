@@ -13,7 +13,7 @@ export function About() {
 
       <PanelContent>
         <Prose>
-          <Markdown>{USER.about}</Markdown>
+          <Markdown >{USER.about}</Markdown>
         </Prose>
       </PanelContent>
     </Panel>

@@ -4,9 +4,12 @@ import dayjs from "dayjs";
 import type { ProfilePage as PageSchema, WithContext } from "schema-dts";
 
 import { About } from "@/features/profile/components/about";
+import { Awards } from "@/features/profile/components/awards";
 import { Brand } from "@/features/profile/components/brand";
 import { Certifications } from "@/features/profile/components/certifications";
+import { Educations } from "@/features/profile/components/educations";
 import { Experiences } from "@/features/profile/components/experiences";
+import { Recommandations } from "@/features/profile/components/recommandations";
 import { GitHubContributions } from "@/features/profile/components/github-contributions";
 import { Overview } from "@/features/profile/components/overview";
 import { ProfileCover } from "@/features/profile/components/profile-cover";
@@ -16,8 +19,8 @@ import { SocialLinks } from "@/features/profile/components/social-links";
 import { TeckStack } from "@/features/profile/components/teck-stack";
 import { USER } from "@/features/profile/data/user";
 import { cn } from "@/lib/utils";
-import { Educations } from "@/features/profile/components/educations";
-import { Awards } from "@/features/profile/components/awards";
+import { SoftSkills } from "@/features/profile/components/soft-skills";
+import { Langues } from "@/features/profile/components/langues";
 
 export default function Page() {
   return (
@@ -65,8 +68,14 @@ export default function Page() {
         <Certifications />
         <Separator />
 
-        {/* <Brand /> */}
-        {/* <Separator /> */}
+        <Recommandations />
+        <Separator />
+
+        <SoftSkills />
+        <Separator />
+
+          <Langues />
+        <Separator />
       </div>
     </>
   );
