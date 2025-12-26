@@ -8,7 +8,7 @@ export const EDUCATIONS: Experience[] = [
     positions: [
       {
         id: "youcode-2024",
-        title: " Certificat en Développement Web",
+        title: " Formation en Développement Web",
         school: "Youcode - UM6P",
         employmentPeriod: { start: "2024", end: "Present" },
         location: "Youssoufia, Maroc",

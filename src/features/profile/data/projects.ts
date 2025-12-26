@@ -348,104 +348,104 @@ Fonctionnalités principales
 `,
   isExpanded: false,
 },
-{
-  id: "futChampionsApp",
-  title: "Copie de FUT Champions Web App Ultimate Team",
-  period: {
-    start: "2024",
-  },
-  link: "https://mohsen-elrhazi.github.io/brief_3_sprint_2/", 
-  github: "https://github.com/Mohsen-Elrhazi/brief_3_sprint_2.git",
-  skills: [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "JSON",
-    "UX",
-    "UI",
-    "Responsive Design",
-    "Git"
-  ],
-  description: `Application web pour gérer une équipe FUT (Ultimate Team) pour EA FC 25. 
-Les utilisateurs peuvent créer, personnaliser et gérer leurs formations et équipes via une interface interactive.
+// {
+//   id: "futChampionsApp",
+//   title: "Copie de FUT Champions Web App Ultimate Team",
+//   period: {
+//     start: "2024",
+//   },
+//   link: "https://mohsen-elrhazi.github.io/brief_3_sprint_2/", 
+//   github: "https://github.com/Mohsen-Elrhazi/brief_3_sprint_2.git",
+//   skills: [
+//     "HTML5",
+//     "CSS3",
+//     "JavaScript",
+//     "JSON",
+//     "UX",
+//     "UI",
+//     "Responsive Design",
+//     "Git"
+//   ],
+//   description: `Application web pour gérer une équipe FUT (Ultimate Team) pour EA FC 25. 
+// Les utilisateurs peuvent créer, personnaliser et gérer leurs formations et équipes via une interface interactive.
 
-Fonctionnalités principales
-- Ajout, modification et suppression des joueurs via un formulaire dynamique.
-- Positionnement automatique des joueurs selon la formation choisie (ex : 4-3-3, 4-4-2).
-- Gestion de la formation principale et des réservistes.
-- Validation des champs de saisie pour garantir la cohérence des données.
-- Interface responsive adaptée aux desktops, tablettes et mobiles.`,
-  isExpanded: false,
-},
-{
-  id: "reservationApp",
-  title: "Réservation - Page Interactive",
-  period: {
-    start: "2024",
-  },
-  link: "https://mohsen-elrhazi.github.io/brief_2_Sprint2/", 
-  github: "https://github.com/Mohsen-Elrhazi/brief_2_Sprint2.git",
-  skills: [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "Responsive Design",
-    "UI/UX",
-    "Framework CSS",
-    "PDF Generation (Bonus)"
-  ],
-  description: `Page web interactive pour gérer des réservations étape par étape. 
-Les utilisateurs peuvent sélectionner les gares de départ et d'arrivée, choisir une date, le nombre de voyageurs et leurs places.
+// Fonctionnalités principales
+// - Ajout, modification et suppression des joueurs via un formulaire dynamique.
+// - Positionnement automatique des joueurs selon la formation choisie (ex : 4-3-3, 4-4-2).
+// - Gestion de la formation principale et des réservistes.
+// - Validation des champs de saisie pour garantir la cohérence des données.
+// - Interface responsive adaptée aux desktops, tablettes et mobiles.`,
+//   isExpanded: false,
+// },
+// {
+//   id: "reservationApp",
+//   title: "Réservation - Page Interactive",
+//   period: {
+//     start: "2024",
+//   },
+//   link: "https://mohsen-elrhazi.github.io/brief_2_Sprint2/", 
+//   github: "https://github.com/Mohsen-Elrhazi/brief_2_Sprint2.git",
+//   skills: [
+//     "HTML5",
+//     "CSS3",
+//     "JavaScript",
+//     "Responsive Design",
+//     "UI/UX",
+//     "Framework CSS",
+//     "PDF Generation (Bonus)"
+//   ],
+//   description: `Page web interactive pour gérer des réservations étape par étape. 
+// Les utilisateurs peuvent sélectionner les gares de départ et d'arrivée, choisir une date, le nombre de voyageurs et leurs places.
 
-Fonctionnalités principales
-- Processus de réservation multi-étapes guidé et intuitif.
-- Visualisation des résultats avec détails horaires et compagnies.
-- Sélection des places pour adultes et enfants.
-- Génération d'un ticket final incluant les informations personnelles et un code QR.
-- Bonus : génération automatique de tickets PDF à partir des réservations.`,
-  isExpanded: false,
-},
-{
-  id: "task-scheduler",
-  title: "Task Scheduler",
-  period: {
-    start: "2024",
-  },
-  link: "https://mohsen-elrhazi.github.io/brief_4/", 
-  github: "https://github.com/Mohsen-Elrhazi/brief_4.git", 
-  skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "DOM Manipulation"],
-  description: `
-Créer une application interactive de gestion de tâches permettant aux utilisateurs de :
+// Fonctionnalités principales
+// - Processus de réservation multi-étapes guidé et intuitif.
+// - Visualisation des résultats avec détails horaires et compagnies.
+// - Sélection des places pour adultes et enfants.
+// - Génération d'un ticket final incluant les informations personnelles et un code QR.
+// - Bonus : génération automatique de tickets PDF à partir des réservations.`,
+//   isExpanded: false,
+// },
+// {
+//   id: "task-scheduler",
+//   title: "Task Scheduler",
+//   period: {
+//     start: "2024",
+//   },
+//   link: "https://mohsen-elrhazi.github.io/brief_4/", 
+//   github: "https://github.com/Mohsen-Elrhazi/brief_4.git", 
+//   skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "DOM Manipulation"],
+//   description: `
+// Créer une application interactive de gestion de tâches permettant aux utilisateurs de :
 
-Fonctionnalités principales
-- Ajouter une tâche avec une description et une date limite
-- Visualiser toutes les tâches et leur état d’avancement
-- Marquer les tâches comme "terminées" et supprimer les tâches finies
-- Recevoir des indications visuelles (couleurs ou icônes) pour identifier les tâches en retard ou à venir
-- Structurer le code en modules clairs et réutilisables pour faciliter la maintenance
-  `,
-},
-{
-  id: "dynamic-class-website",
-  title: "Site Web Dynamique de Classe",
-  period: {
-    start: "09.2024",
-    end: "10.2024",
-    isOngoing: false,
-  },
-  link: "https://mohsen-elrhazi.github.io/Ycode/Briefs/brief_1/index.html", 
-  github: "https://github.com/Mohsen-Elrhazi/Ycode/tree/master/Briefs/brief_1", 
-  skills: ["HTML5", "CSS3","Bootstrap", "Navigation", "UI/UX", "Figma"],
-  description: `
-Transformer une page web statique en un site web dynamique interconnecté
-pour améliorer la navigation et l'organisation du contenu.
+// Fonctionnalités principales
+// - Ajouter une tâche avec une description et une date limite
+// - Visualiser toutes les tâches et leur état d’avancement
+// - Marquer les tâches comme "terminées" et supprimer les tâches finies
+// - Recevoir des indications visuelles (couleurs ou icônes) pour identifier les tâches en retard ou à venir
+// - Structurer le code en modules clairs et réutilisables pour faciliter la maintenance
+//   `,
+// },
+// {
+//   id: "dynamic-class-website",
+//   title: "Site Web Dynamique de Classe",
+//   period: {
+//     start: "09.2024",
+//     end: "10.2024",
+//     isOngoing: false,
+//   },
+//   link: "https://mohsen-elrhazi.github.io/Ycode/Briefs/brief_1/index.html", 
+//   github: "https://github.com/Mohsen-Elrhazi/Ycode/tree/master/Briefs/brief_1", 
+//   skills: ["HTML5", "CSS3","Bootstrap", "Navigation", "UI/UX", "Figma"],
+//   description: `
+// Transformer une page web statique en un site web dynamique interconnecté
+// pour améliorer la navigation et l'organisation du contenu.
 
-Fonctionnalités principales
-- Accueil : Présentation de la classe, description, image représentative
-- Règles et Stratégies : Liste des règles et conseils pour réussir dans la classe
-- Contact : Formulaire de contact avec nom, email, message et informations supplémentaires
-  `,
-},
+// Fonctionnalités principales
+// - Accueil : Présentation de la classe, description, image représentative
+// - Règles et Stratégies : Liste des règles et conseils pour réussir dans la classe
+// - Contact : Formulaire de contact avec nom, email, message et informations supplémentaires
+//   `,
+// },
 
 
 ];
