@@ -95,7 +95,7 @@ export function RecommandationPositionItem({
 
         <CollapsibleContent className="overflow-hidden duration-300 data-[state=closed]:animate-collapsible-fade-up data-[state=open]:animate-collapsible-fade-down">
           {position.summary && (
-            <Prose className="pt-2 pl-9 text-sm ">
+            <Prose className="pt-2 pl-9 pr-2 text-sm ">
               <Markdown>{position.summary}</Markdown>
             </Prose>
           )}

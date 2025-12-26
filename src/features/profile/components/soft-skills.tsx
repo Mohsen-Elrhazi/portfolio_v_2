@@ -20,9 +20,9 @@ export function SoftSkills() {
 
       <PanelContent>
         <Prose>
-          <div className="flex flex-wrap items-center justify-center gap-2">
+          <div className="flex flex-wrap items-center justify-center gap-2.5">
             {SOFT_SKILLS.map((skill, index) => (
-              <span key={skill} className="flex items-center gap-2">
+              <span key={skill} className="flex items-center gap-2.5">
                 <span>{skill}</span>
                 {index < SOFT_SKILLS.length - 1 && (
                   <Separator

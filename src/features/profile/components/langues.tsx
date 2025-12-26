@@ -19,9 +19,9 @@ export function Langues() {
 
       <PanelContent>
         <Prose>
-          <div className="flex flex-wrap items-center justify-center gap-2">
+          <div className="flex flex-wrap items-center justify-center gap-6">
             {LANGUES.map((langue, index) => (
-              <span key={langue} className="flex items-center gap-2">
+              <span key={langue} className="flex items-center gap-6">
                 <span>{langue}</span>
                 {index < LANGUES.length - 1 && (
                   <Separator
