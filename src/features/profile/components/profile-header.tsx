@@ -20,9 +20,9 @@ export function ProfileHeader() {
           />
         </div>
 
-        <SimpleTooltip content="Maroc">
-          {/* Flag of Morocco */}
+        {/* Flag of Morocco */}
 
+        {/* <SimpleTooltip content="Maroc">
           <svg
             className="absolute top-0 -left-px h-8 sm:h-9"
             viewBox="0 0 30 20"
@@ -36,7 +36,7 @@ export function ProfileHeader() {
               strokeWidth="0.6"
             />
           </svg>
-        </SimpleTooltip>
+        </SimpleTooltip> */}
       </div>
 
       <div className="flex flex-1 flex-col">
@@ -46,18 +46,17 @@ export function ProfileHeader() {
             "bg-[repeating-linear-gradient(315deg,var(--pattern-foreground)_0,var(--pattern-foreground)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] [--pattern-foreground:var(--color-edge)]/56"
           )}
         ></div>
-     
 
         <div className="border-t border-edge">
           <h1 className="flex items-center pl-4 text-3xl font-semibold">
             {USER.displayName}
             &nbsp;
             {/* <SimpleTooltip content="Vérifié"> */}
-              <VerifiedIcon className="size-[0.6em] translate-y-px text-info select-none" />
+            <VerifiedIcon className="size-[0.6em] translate-y-px text-info select-none" />
             {/* </SimpleTooltip> */}
             {USER.namePronunciationUrl && (
               <>
-                &nbsp;                
+                &nbsp;
                 <PronounceMyName
                   className="translate-y-px"
                   namePronunciationUrl={USER.namePronunciationUrl}

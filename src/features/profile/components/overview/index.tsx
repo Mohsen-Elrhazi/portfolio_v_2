@@ -35,11 +35,11 @@ export function Overview() {
 
         <EmailItem email={USER.email} />
 
-        <IntroItem
+        {/* <IntroItem
           icon={GlobeIcon}
           content={urlToName(USER.website)}
           href={USER.website}
-        />
+        /> */}
 
         <CvItem
           icon={DownloadCloudIcon}

@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
 
+import ClockTimer from "@/components/Clock-timer"; // on va créer ce composant
 import { DesktopNav } from "@/components/desktop-nav";
 import { NavItemGitHub } from "@/components/nav-item-github";
 import { MAIN_NAV } from "@/config/site";
@@ -10,9 +11,6 @@ import { SiteHeaderMark } from "./site-header-mark";
 import { SiteHeaderWrapper } from "./site-header-wrapper";
 // import { ToggleTheme } from "./toggle-theme";
 import { ThemeToggle } from "./theme-toggle";
-
-import ClockTimer from "@/components/Clock-timer"; // on va créer ce composant
-
 
 const BrandContextMenu = dynamic(() =>
   import("@/components/brand-context-menu").then((mod) => mod.BrandContextMenu)
@@ -27,7 +25,6 @@ const MobileNav = dynamic(() =>
 );
 
 export function SiteHeader() {
-
   return (
     <SiteHeaderWrapper
       className={cn(
@@ -53,9 +50,20 @@ export function SiteHeader() {
         <DesktopNav items={MAIN_NAV} />
 
         <div className="flex items-center gap-2">
-          {/* <CommandMenu posts={posts} /> */}
-          {/* <NavItemGitHub /> */}
-        <ClockTimer />
+          {/* <ClockTimer />
+          <span className="mx-2 flex h-4 w-px bg-border" /> */}
+
+          <div className="flex items-center gap-1">
+            <span className="text-sm font-medium">Open to work</span>
+
+            <div className="flex size-6 shrink-0 items-center justify-center select-none">
+              <span className="relative flex items-center justify-center">
+                <span className="absolute inline-flex size-3 animate-ping rounded-full bg-info opacity-50" />
+                <span className="relative inline-flex size-2 rounded-full bg-info" />
+                {/* <span className="sr-only">Open to work</span> */}
+              </span>
+            </div>
+          </div>
           <span className="mx-2 flex h-4 w-px bg-border" />
 
           <ThemeToggle />
