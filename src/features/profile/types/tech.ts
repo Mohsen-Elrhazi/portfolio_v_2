@@ -15,9 +15,12 @@ export type Tech = {
  * Représente TOUT le stack technique, séparé par catégories
  */
 export type TechStack = {
-  languages: Tech[];
+  // languages: Tech[];
   frontend: Tech[];
   backend: Tech[];
+  devops: Tech[];
+  editors: Tech[];
+  design: Tech[];
   database: Tech[];
-  tools: Tech[];
+
 };
