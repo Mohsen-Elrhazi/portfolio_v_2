@@ -61,24 +61,6 @@ export function ProjectItem({
                   {project.title}
                 </h3>
 
-                {/* <dl className="text-sm text-muted-foreground">
-                  <dt className="sr-only">Period</dt>
-                  <dd className="flex items-center gap-0.5">
-                    <span>{start}</span>
-                    <span className="font-mono">—</span>
-                    {isOngoing ? (
-                      <>
-                        <InfinityIcon
-                          className="size-4.5 translate-y-[0.5px]"
-                          aria-hidden
-                        />
-                        <span className="sr-only">Present</span>
-                      </>
-                    ) : (
-                      <span>{end}</span>
-                    )}
-                  </dd>
-                </dl> */}
 
                 <dl className="text-sm text-muted-foreground">
                   <dt className="sr-only">Period</dt>

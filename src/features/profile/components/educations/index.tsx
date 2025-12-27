@@ -10,15 +10,15 @@ export function Educations() {
       <PanelHeader>
         <PanelTitle className="flex items-center justify-start">
           <span>Education</span>
-          <div className="flex items-center gap-3">
-            {/* <div className="flex size-6 shrink-0 items-center justify-center select-none">
+          {/* <div className="flex items-center gap-3">
+            <div className="flex size-6 shrink-0 items-center justify-center select-none">
               <span className="relative flex items-center justify-center">
                 <span className="absolute inline-flex size-3 animate-ping rounded-full bg-info opacity-50" />
                 <span className="relative inline-flex size-2 rounded-full bg-info" />
                 <span className="sr-only">Current Education</span>
               </span>
-            </div> */}
-          </div>
+            </div>
+          </div> */}
         </PanelTitle>
       </PanelHeader>
 

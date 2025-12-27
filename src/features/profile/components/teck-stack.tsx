@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
+import { Separator } from "@/components/ui/separator";
 import { SimpleTooltip } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 
@@ -14,61 +15,75 @@ export function TeckStack() {
         <PanelTitle>Stack</PanelTitle>
       </PanelHeader>
 
-      <PanelContent
-        className={cn(
-          "[--pattern-foreground:var(--color-zinc-950)]/5 dark:[--pattern-foreground:var(--color-white)]/5",
-          "bg-[radial-gradient(var(--pattern-foreground)_1px,transparent_0)] bg-size-[10px_10px] bg-center",
-          "bg-zinc-950/0.75 dark:bg-white/0.75"
-        )}
-      >
-        <ul className="pl-3 flex flex-wrap gap-5 select-none">
-          {TECH_STACK.map((tech) => {
-            return (
-              <li key={tech.key} className="flex">
-                <SimpleTooltip content={tech.title}>
-                  <div
-                    aria-label={tech.title}
-                    className="cursor-pointer"
-                  >
-                    {tech.theme ? (
-                      <>
+      <div>
+        {Object.entries(TECH_STACK).map(([category, techs]) => (
+          <div
+            key={category}
+            className={cn(
+              "group/cert flex items-center border-b border-edge pr-2"
+            )}
+          >
+            {/* === COLONNE GAUCHE (remplace l’icône) === */}
+            {/* <div
+              className={cn(
+                "mx-4 flex size-14 shrink-0 items-center justify-center rounded-lg select-none",
+                "border border-muted-foreground/15 ring-1 ring-edge ring-offset-1 ring-offset-background",
+                "bg-muted text-muted-foreground text-xs font-medium uppercase"
+              )}
+              aria-hidden
+            >
+              {category}
+            </div> */}
+            <div
+              className="mx-4 flex size-16 shrink-0 items-center justify-center text-sm text-muted-foreground uppercase select-none"
+              aria-hidden
+            >
+              {category}
+            </div>
+
+            {/* === COLONNE DROITE (remplace le contenu certif) === */}
+            <div className="flex-1 space-y-1 border-l border-dashed border-edge p-4 pr-2">
+              <div className="flex flex-wrap items-center gap-3.5">
+                {techs.map((tech: any) => (
+                  <SimpleTooltip key={tech.key} content={tech.title}>
+                    <div className="cursor-pointer select-none">
+                      {tech.theme && tech.icon.dark ? (
+                        <>
+                          <Image
+                            src={tech.icon.light}
+                            alt={tech.title}
+                            width={32}
+                            height={32}
+                            className="hidden size-8 object-contain [html.light_&]:block"
+                            unoptimized
+                          />
+                          <Image
+                            src={tech.icon.dark}
+                            alt={tech.title}
+                            width={32}
+                            height={32}
+                            className="hidden size-8 object-contain [html.dark_&]:block"
+                            unoptimized
+                          />
+                        </>
+                      ) : (
                         <Image
                           src={tech.icon.light}
-                          alt={`${tech.title} light icon`}
+                          alt={tech.title}
                           width={32}
                           height={32}
-                          className="hidden [html.light_&]:block block w-8 h-8 object-contain"
+                          className="size-8 object-contain"
                           unoptimized
                         />
-                        <Image
-                          src={tech.icon.dark}
-                          alt={`${tech.title} dark icon`}
-                          width={32}
-                          height={32}
-                          className="hidden [html.dark_&]:block block w-8 h-8 object-contain"
-                          unoptimized
-
-                        />
-                      </>
-                    ) : (
-                      <Image
-                        src={tech.icon.light}
-                        alt={`${tech.title} icon`}
-                        width={32}
-                        height={32}
-                        unoptimized
-                          className="block w-8 h-8 object-contain"
-
-                      />
-                    )}
-                    <span className="sr-only">{tech.title}</span>
-                  </div>
-                </SimpleTooltip>
-              </li>
-            );
-          })}
-        </ul>
-      </PanelContent>
+                      )}
+                    </div>
+                  </SimpleTooltip>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </Panel>
   );
 }

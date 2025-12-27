@@ -4,6 +4,7 @@ import { RepeatIcon } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import React, { useCallback, useEffect, useState } from "react";
 
+import { EMark } from "@/components/e-mark";
 import { MMark } from "@/components/m-mark";
 import { Button } from "@/components/ui/button";
 import { SimpleTooltip } from "@/components/ui/tooltip";
@@ -62,7 +63,13 @@ export function Hello() {
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.5 }}
             >
-              <MMark className="h-12 sm:h-16" />
+              <div
+                id="js-cover-mark"
+                className="flex items-center gap-2 object-contain"
+              >
+                <MMark className="h-12 sm:h-16" />
+                <EMark className="h-12 sm:h-16" />
+              </div>
             </motion.div>
           )}
         </div>

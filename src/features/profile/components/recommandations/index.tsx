@@ -11,9 +11,12 @@ export function Recommandations() {
         <PanelTitle>Recommandations</PanelTitle>
       </PanelHeader>
 
-      <div className="pr-2 pl-4">
+      <div className=" pr-2 pl-4 overflow-hidden" >
         {RECOMMANDATIONS.map((recommandation) => (
-          <RecommandationItem key={recommandation.id} recommandation={recommandation} />
+          <RecommandationItem
+            key={recommandation.id}
+            recommandation={recommandation}
+          />
         ))}
       </div>
     </Panel>
