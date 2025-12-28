@@ -9,20 +9,8 @@ export function SiteFooter() {
   return (
     <footer className="max-w-screen overflow-x-hidden px-2">
       <div className="screen-line-before mx-auto border-x border-edge pt-4 md:max-w-3xl">
-        {/* <p className="mb-1 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
-          Inspired by tailwindcss.com & ui.shadcn.com &{" "}
-          <a
-            className="link"
-            href="https://chanhdai.com/"
-            target="_blank"
-            rel="noopener"
-          >
-            ncdai
-          </a>
-        </p> */}
-
         <p className="mb-4 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
-            Développé par{" "}
+          Développé par{" "}
           <a
             className="link"
             href="https://www.linkedin.com/in/mohsen-elrhazi-13a65b2bb/"
@@ -35,7 +23,7 @@ export function SiteFooter() {
 
         <div
           className={cn(
-            "screen-line-before screen-line-after flex w-full before:z-1 after:z-1",
+            "screen-line-before flex w-full before:z-1 after:z-1",
             "bg-[repeating-linear-gradient(315deg,var(--pattern-foreground)_0,var(--pattern-foreground)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] [--pattern-foreground:var(--color-edge)]/56"
           )}
         ></div>
