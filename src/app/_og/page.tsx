@@ -19,6 +19,7 @@ export default function Page() {
 
         <div className="grow border-x border-edge" />
       </div>
+      
     </>
   );
 }
