@@ -8,8 +8,8 @@ export function ProfileCover() {
     <div>
       <div
         className={cn(
-          "aspect-[3/1] border-x border-edge select-none sm:aspect-4/1",
-          // "aspect-[2/1] border-x border-edge select-none sm:aspect-[3.4/1]",
+          // "aspect-[3/1] border-x border-edge select-none sm:aspect-4/1",
+          "aspect-[2/1] border-x border-edge select-none sm:aspect-[3.4/1]",
 
           "flex items-center justify-center text-black dark:text-white",
           "screen-line-before screen-line-after before:-top-px after:-bottom-px",
