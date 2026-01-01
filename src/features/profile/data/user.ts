@@ -33,7 +33,6 @@ Développeur Full Stack, passionné par la conception et la création de solutio
 
   // avatar: "mohsen.jpeg",
   avatar: "mohsen2_ai.png",
-  // ogImage: '' , // "https://assets.chanhdai.com/images/screenshot-og-image-light.png?t=1759581475"
   ogImage: "https://mohsen-elrhazi.tech/mohsen2_ai.png",
   namePronunciationUrl: "/audio/audio.mp3",
   keywords: ["Elrhazi Mohsen", "elrhazi mohsen", "mohsen elrhazi", ""],
