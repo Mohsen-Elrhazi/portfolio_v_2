@@ -10,12 +10,12 @@ export const TECH_STACK: TechStack = {
     { key: "jquery", title: "jQuery", icon: { light: "/icons_techno/jquery.svg" } },
     { key: "react", title: "React", icon: { light: "/icons_techno/React_light.svg" }, theme: true },
     { key: "nextjs", title: "Next.js", icon: { light: "/icons_techno/nextjs_icon_dark.svg", dark: "/icons_techno/nextjs-light.svg" }, theme: true },
-    // { key: "angular", title: "Angular", icon: { light: "/icons_techno/angular.svg" } },
     { key: "tailwindcss", title: "Tailwind CSS", icon: { light: "/icons_techno/tailwindcss.svg" } },
     { key: "bootstrap", title: "Bootstrap", icon: { light: "/icons_techno/bootstrap.svg" } },
       { key: "shadcnui", title: "shadcn/ui", icon: { light: "/icons_techno/ui_light.svg", dark: "/icons_techno/ui_dark.svg" }, theme: true },
     { key: "materialui", title: "Material UI", icon: { light: "/icons_techno/materialui.svg" } },
     { key: "flowbite", title: "Flowbite", icon: { light: "/icons_techno/flowbite.svg" } },
+    // { key: "angular", title: "Angular", icon: { light: "/icons_techno/angular.svg" } },
   ],
 
   backend: [
