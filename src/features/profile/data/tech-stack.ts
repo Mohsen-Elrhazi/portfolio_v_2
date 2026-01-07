@@ -12,7 +12,7 @@ export const TECH_STACK: TechStack = {
     { key: "nextjs", title: "Next.js", icon: { light: "/icons_techno/nextjs_icon_dark.svg", dark: "/icons_techno/nextjs-light.svg" }, theme: true },
     { key: "tailwindcss", title: "Tailwind CSS", icon: { light: "/icons_techno/tailwindcss.svg" } },
     { key: "bootstrap", title: "Bootstrap", icon: { light: "/icons_techno/bootstrap.svg" } },
-      { key: "shadcnui", title: "shadcn/ui", icon: { light: "/icons_techno/ui_light.svg", dark: "/icons_techno/ui_dark.svg" }, theme: true },
+    { key: "shadcnui", title: "shadcn/ui", icon: { light: "/icons_techno/ui_light.svg", dark: "/icons_techno/ui_dark.svg" }, theme: true },
     { key: "materialui", title: "Material UI", icon: { light: "/icons_techno/materialui.svg" } },
     { key: "flowbite", title: "Flowbite", icon: { light: "/icons_techno/flowbite.svg" } },
     // { key: "angular", title: "Angular", icon: { light: "/icons_techno/angular.svg" } },
@@ -46,7 +46,7 @@ export const TECH_STACK: TechStack = {
     { key: "github", title: "GitHub", icon: { light: "/icons_techno/github-light.svg", dark: "/icons_techno/github-dark.svg" }, theme: true },
     { key: "docker", title: "Docker", icon: { light: "/icons_techno/docker.svg" } },
     { key: "kubernetes", title: "Kubernetes", icon: { light: "/icons_techno/kubernetes.svg" } },
-    // { key: "jira", title: "Jira", icon: { light: "/icons_techno/jira.svg" } },
+    { key: "jira", title: "Jira", icon: { light: "/icons_techno/jira.svg" } },
     
   ],
 
