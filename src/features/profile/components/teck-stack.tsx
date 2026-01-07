@@ -20,7 +20,10 @@ export function TeckStack() {
           <div
             key={category}
             className={cn(
-              "group/cert flex items-center border-b border-edge pr-2"
+              "group/cert flex items-center border-b border-edge",
+                        // "bg-black/0.75 bg-[radial-gradient(var(--pattern-foreground)_1px,transparent_0)] bg-size-[10px_10px] bg-center [--pattern-foreground:var(--color-zinc-950)]/5 dark:bg-white/0.75 dark:[--pattern-foreground:var(--color-white)]/5"
+
+              
             )}
           >
             {/* === COLONNE GAUCHE (remplace l’icône) === */}
@@ -42,7 +45,14 @@ export function TeckStack() {
             </div>
 
             {/* === COLONNE DROITE (remplace le contenu certif) === */}
-            <div className="flex-1 space-y-1 border-l border-dashed border-edge p-4 pr-2">
+            {/* <div className="flex-1 space-y-1 border-l border-dashed border-edge p-4 pr-2"> */}
+            <div
+            className={cn(
+              "flex-1 space-y-1 border-l border-dashed border-edge p-4",
+                        "bg-black/0.75 bg-[radial-gradient(var(--pattern-foreground)_1px,transparent_0)] bg-size-[10px_10px] bg-center [--pattern-foreground:var(--color-zinc-950)]/5 dark:bg-white/0.75 dark:[--pattern-foreground:var(--color-white)]/5"
+
+              
+            )}>
               <div className="flex flex-wrap items-center gap-3.5">
                 {techs.map((tech: any) => (
                   <SimpleTooltip key={tech.key} content={tech.title}>
