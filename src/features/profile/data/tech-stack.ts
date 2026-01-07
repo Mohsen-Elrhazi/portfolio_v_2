@@ -14,7 +14,7 @@ export const TECH_STACK: TechStack = {
     { key: "bootstrap", title: "Bootstrap", icon: { light: "/icons_techno/bootstrap.svg" } },
     { key: "shadcnui", title: "shadcn/ui", icon: { light: "/icons_techno/ui_light.svg", dark: "/icons_techno/ui_dark.svg" }, theme: true },
     { key: "materialui", title: "Material UI", icon: { light: "/icons_techno/materialui.svg" } },
-    { key: "flowbite", title: "Flowbite", icon: { light: "/icons_techno/flow.svg" } },
+    { key: "flowbite", title: "Flowbite", icon: { light: "/icons_techno/flowbite.svg", dark: "/icons_techno/flowbite.svg" }, theme: true },
   ],
 
   backend: [
