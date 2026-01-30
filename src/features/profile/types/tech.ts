@@ -19,7 +19,7 @@ export type TechStack = {
   frontend: Tech[];
   backend: Tech[];
   devops: Tech[];
-  editors: Tech[];
+  // editors: Tech[];
   design: Tech[];
   database: Tech[];
   securité: Tech[];
