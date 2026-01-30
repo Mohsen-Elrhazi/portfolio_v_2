@@ -22,5 +22,8 @@ export type TechStack = {
   editors: Tech[];
   design: Tech[];
   database: Tech[];
+  securité: Tech[];
+  conception: Tech[];
+  "API & Outils": Tech[];
 
 };

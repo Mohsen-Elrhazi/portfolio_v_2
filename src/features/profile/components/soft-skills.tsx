@@ -15,7 +15,7 @@ export function SoftSkills() {
   return (
     <Panel id="soft-skills">
       <PanelHeader>
-        <PanelTitle>Soft Skills</PanelTitle>
+        <PanelTitle>Compétences Transversales</PanelTitle>
       </PanelHeader>
 
       <PanelContent>

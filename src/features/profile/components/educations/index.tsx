@@ -9,7 +9,7 @@ export function Educations() {
     <Panel id="education">
       <PanelHeader>
         <PanelTitle className="flex items-center justify-start">
-          <span>Education</span>
+          <span>Formation</span>
           {/* <div className="flex items-center gap-3">
             <div className="flex size-6 shrink-0 items-center justify-center select-none">
               <span className="relative flex items-center justify-center">

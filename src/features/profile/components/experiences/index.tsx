@@ -8,7 +8,7 @@ export function Experiences() {
   return (
     <Panel id="experience">
       <PanelHeader>
-        <PanelTitle>Experience</PanelTitle>
+        <PanelTitle>Expériences</PanelTitle>
       </PanelHeader>
 
       <div className="pr-2 pl-4 overflow-hidden">

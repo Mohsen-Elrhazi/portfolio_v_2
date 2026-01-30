@@ -12,7 +12,7 @@ export function TeckStack() {
   return (
     <Panel id="stack">
       <PanelHeader>
-        <PanelTitle>Stack</PanelTitle>
+        <PanelTitle>Compétences Techniques</PanelTitle>
       </PanelHeader>
 
       <div>
@@ -20,7 +20,7 @@ export function TeckStack() {
           <div
             key={category}
             className={cn(
-              "group/cert flex items-center border-b border-edge",
+              "group/cert flex items-center border-b border-edge ",
                         // "bg-black/0.75 bg-[radial-gradient(var(--pattern-foreground)_1px,transparent_0)] bg-size-[10px_10px] bg-center [--pattern-foreground:var(--color-zinc-950)]/5 dark:bg-white/0.75 dark:[--pattern-foreground:var(--color-white)]/5"
 
               
@@ -38,7 +38,7 @@ export function TeckStack() {
               {category}
             </div> */}
             <div
-              className="mx-4 flex size-16 shrink-0 items-center justify-center text-sm text-muted-foreground uppercase select-none"
+              className="mx-4 flex w-22 h-14 shrink-0 items-center justify-center text-sm text-muted-foreground uppercase select-none"
               aria-hidden
             >
               {category}
@@ -48,12 +48,12 @@ export function TeckStack() {
             {/* <div className="flex-1 space-y-1 border-l border-dashed border-edge p-4 pr-2"> */}
             <div
             className={cn(
-              "flex-1 space-y-1 border-l border-dashed border-edge p-4",
+              "flex-1 space-y-1 border-l border-dashed border-edge p-2",
                         "bg-black/0.75 bg-[radial-gradient(var(--pattern-foreground)_1px,transparent_0)] bg-size-[10px_10px] bg-center [--pattern-foreground:var(--color-zinc-950)]/5 dark:bg-white/0.75 dark:[--pattern-foreground:var(--color-white)]/5"
 
               
             )}>
-              <div className="flex flex-wrap items-center gap-3.5">
+              <div className="flex flex-wrap items-center gap-4">
                 {techs.map((tech: any) => (
                   <SimpleTooltip key={tech.key} content={tech.title}>
                     <div className="cursor-pointer select-none">

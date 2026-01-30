@@ -22,7 +22,7 @@ import { cn } from "@/lib/utils";
 import { SoftSkills } from "@/features/profile/components/soft-skills";
 import { Langues } from "@/features/profile/components/langues";
 
-import ScrollIndicator from "@/components/Scroll/ScrollIndicator";
+// import ScrollIndicator from "@/components/Scroll/ScrollIndicator";
 
 export default function Page() {
   return (
@@ -74,12 +74,12 @@ export default function Page() {
 
         <Recommandations />
         <Separator />
-
+{/* 
         <SoftSkills />
         <Separator />
 
           <Langues />
-        <Separator />
+        <Separator /> */}
       </div>
     </>
   );

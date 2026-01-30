@@ -9,7 +9,7 @@ export const USER: User = {
   pronouns: "he/him",
   bio: "Creating with code. Small details matter.",
   flipSentences: [
-    "Technicien Supérieur",
+    "Technicien Supérieur en DSI",
     "Développeur Full Stack",
    "Développeur Frontend",
     "Développeur Backend",
@@ -28,8 +28,9 @@ export const USER: User = {
     },
   ],
   about: `
-Développeur Full Stack, passionné par la conception et la création de solutions web modernes et performantes. Rigoureux, curieux et orienté résultats, je suis actuellement à la recherche d’une opportunité d'emploi pour contribuer à des projets à fort impact et continuer à évoluer techniquement.
-`,
+Développeur Full Stack, passionné par la conception et la création de solutions web modernes et performantes.
+je suis actuellement à la recherche d’une opportunité d’emploi pour contribuer à des projets à fort impact et
+continuer à évoluer techniquement.`,
 
   // avatar: "mohsen.jpeg",
   avatar: "mohsen2_ai.png",

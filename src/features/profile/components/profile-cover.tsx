@@ -1,8 +1,10 @@
 import { EMark } from "@/components/e-mark";
 import { MMark } from "@/components/m-mark";
 import MEMarkTest from "@/components/me-mark-test";
+import {
+  AppleHelloEnglishEffect,
+} from "@/components/apple-hello-effect";
 import { cn } from "@/lib/utils";
-
 
 export function ProfileCover() {
   return (
@@ -21,8 +23,9 @@ export function ProfileCover() {
           id="js-cover-mark"
           className="flex items-center gap-2 object-contain"
         >
-          <MMark className="h-16.5" />
-          <EMark className="h-15" />
+          {/* <MMark className="h-16.5" />
+          <EMark className="h-15" /> */}
+          <AppleHelloEnglishEffect />
         </div>
       </div>
     </div>
