@@ -33,7 +33,7 @@ je suis actuellement à la recherche d’une opportunité d’emploi pour contri
 continuer à évoluer techniquement.`,
 
   // avatar: "mohsen.jpeg",
-  avatar: "mohsen2_ai.png",
+  avatar: "user-profile.webp",
   ogImage: "https://mohsen-elrhazi.tech/mohsen2_ai.png",
   namePronunciationUrl: "/audio/audio.mp3",
   keywords: ["Elrhazi Mohsen", "elrhazi mohsen", "mohsen elrhazi", ""],
