@@ -39,4 +39,5 @@ continuer à évoluer techniquement.`,
   keywords: ["Elrhazi Mohsen", "elrhazi mohsen", "mohsen elrhazi", ""],
   dateCreated: "2025-10-27", // YYYY-MM-DD
   // cv: "/CV_Elrhazi_Mohsen.pdf",
+  cv: "",
 };
