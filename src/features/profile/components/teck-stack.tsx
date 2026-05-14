@@ -12,7 +12,7 @@ export function TeckStack() {
   return (
     <Panel id="stack">
       <PanelHeader>
-        <PanelTitle>Technos</PanelTitle>
+        <PanelTitle>Compétences Techniques</PanelTitle>
       </PanelHeader>
 
       <div>
