@@ -2,6 +2,22 @@ import type { Experience } from "../types/experiences";
 
 export const EXPERIENCES: Experience[] = [
   {
+    id: "Jumpit",
+    companyName: "Jump iT",
+    companyLogo: "/jump_it_ma_logo.jpg",
+    positions: [
+      {
+        id: "Jumpit-2026",
+        title: "Développeur Full-stack",
+        employmentPeriod: { start: "05.2026", end: "Présent" },
+        // employmentType: "Full-time",
+        location: "Rabat, Maroc",
+        icon: "code",
+        description: `- Développement d'une plateforme SaaS de gestion de conciergerie.`,
+skills: ["Next.js", "TypeScript", "NestJS", "MongoDB", "Docker", "JWT", "Git/GitHub", "Vercel"],      },
+    ],
+  },
+  {
     id: "softnex",
     companyName: "SOFTNEX",
     companyLogo: "/icons_entreprise/softnex.png",

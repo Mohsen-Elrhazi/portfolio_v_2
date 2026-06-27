@@ -50,7 +50,6 @@ export const TECH_STACK: TechStack = {
     { key: "git", title: "Git", icon: { light: "/icons_techno/git.svg" } },
     { key: "github", title: "GitHub", icon: { light: "/icons_techno/github-light.svg", dark: "/icons_techno/github-dark.svg" }, theme: true },
     { key: "docker", title: "Docker", icon: { light: "/icons_techno/docker.svg" } },
-    { key: "kubernetes", title: "Kubernetes", icon: { light: "/icons_techno/kubernetes.svg" } },
     { key: "jira", title: "Jira", icon: { light: "/icons_techno/ji.svg" } },
     
   ],

@@ -2,6 +2,81 @@ import type { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
   {
+    id: "intranetAngular",
+    title: "Intranet Universitaire — Frontend (Angular)",
+    period: {
+      start: "2026",
+    },
+    github: "https://github.com/Mohsen-Elrhazi/intranet_angular.git",
+    skills: [
+      "Angular 21",
+      "TypeScript",
+      "ng-zorro-antd (Ant Design)",
+      "Tailwind CSS 4",
+      "RxJS",
+      "JWT (jwt-decode)",
+      "Angular Router (Guards, Interceptors)",
+      "Less / SCSS",
+    ],
+    description: `Frontend Angular de l'application Intranet Universitaire — consomme l'API REST Spring Boot (voir projet ci-dessous) pour la gestion des utilisateurs avec authentification basée sur les rôles.
+
+Fonctionnalités principales
+- Authentification JWT (login, refresh token, décodage des rôles)
+- Module Admin : gestion des étudiants, enseignants, salles de classe, départements, programmes et matières (CRUD complet)
+- Module Étudiant : consultation des assignments, salles et cours
+- Module Enseignant : gestion et consultation des cours et salles
+- Navigation conditionnelle selon le rôle connecté (Admin / Teacher / Student)
+- Protection des routes avec Auth Guard
+
+Aspects techniques
+- Architecture modulaire par feature (Admin, Student, Teacher, Auth, Core, Layout)
+- Intercepteur HTTP pour injection automatique du token JWT
+- Services Angular avec HttpClient pour consommer l'API REST
+- Composants réutilisables (formulaires, détails, listes actifs/supprimés)
+- UI avec ng-zorro-antd (Ant Design) et Tailwind CSS 4
+- Gestion d'état réactive avec RxJS
+- Configuration multi-environnements (dev / prod)`,
+    isExpanded: false,
+  },
+  {
+    id: "intranetSpringBoot",
+    title: "Intranet Universitaire — Backend (Spring Boot)",
+    period: {
+      start: "2026",
+    },
+    github: "https://github.com/Mohsen-Elrhazi/intranet_spring_boot.git",
+    skills: [
+      "Java 17",
+      "Spring Boot (Web MVC, Data JPA, Validation, Security)",
+      "Hibernate / JPA",
+      "MySQL",
+      "Spring Security & JWT",
+      "Lombok",
+      "MapStruct",
+      "Maven",
+      "Docker",
+    ],
+    description: `Backend REST de l'application Intranet Universitaire — expose les APIs consommées par le frontend Angular (voir projet ci-dessus) pour la gestion des utilisateurs avec authentification JWT.
+
+Fonctionnalités principales
+- Gestion des étudiants (CRUD)
+- Gestion des enseignants (CRUD, mise à jour)
+- Gestion du compte utilisateur (mise à jour email, mot de passe)
+- Authentification JWT (login, refresh token)
+- Gestion des rôles et accès (Admin, Teacher, Student)
+- Gestion centralisée des exceptions
+
+Aspects techniques
+- Architecture en couches (Controller, Service, Repository, DTO, Entity)
+- Persistance des données avec JPA / Hibernate
+- Sécurisation de l'API avec Spring Security & JWT
+- Mapping DTO ↔ Entity avec MapStruct
+- Validation des données avec annotations
+- Réponses API normalisées via ApiResponse
+- Conteneurisation avec Docker`,
+    isExpanded: false,
+  },
+  {
     id: "smartShop",
     title: "SmartShop",
     period: {
@@ -93,7 +168,8 @@ Aspects techniques
       start: "2025",
       isOngoing: true, // projet en cours, modifie si nécessaire
     },
-    github: "https://github.com/Mohsen-Elrhazi/brief4_Gestion_Catalogue_Films.git",
+    github:
+      "https://github.com/Mohsen-Elrhazi/brief4_Gestion_Catalogue_Films.git",
     skills: [
       "Java 17",
       "Spring Core",
@@ -168,26 +244,27 @@ Aspects techniques
     isExpanded: false,
   },
   {
-  id: "chatAppLaravel",
-  title: "Application de Chat - Laravel",
-  period: {
-    start: "2024",
-    end: "2025",},
-  github: "https://github.com/Mohsen-Elrhazi/projet_fil_rouge.git",
-  skills: [
-    "Laravel",
-    "PHP",
-    "Tailwind CSS",
-    "JavaScript",
-    "WebSocket",
-    "Pusher",
-    "MySQL",
-    "Docker",
-    "Gestion en temps réel",
-    "MVC multi-couches",
-    "Git"
-  ],
-  description: `Application web de messagerie instantanée permettant aux utilisateurs de communiquer en temps réel.
+    id: "chatAppLaravel",
+    title: "Application de Chat - Laravel",
+    period: {
+      start: "2024",
+      end: "2025",
+    },
+    github: "https://github.com/Mohsen-Elrhazi/projet_fil_rouge.git",
+    skills: [
+      "Laravel",
+      "PHP",
+      "Tailwind CSS",
+      "JavaScript",
+      "WebSocket",
+      "Pusher",
+      "MySQL",
+      "Docker",
+      "Gestion en temps réel",
+      "MVC multi-couches",
+      "Git",
+    ],
+    description: `Application web de messagerie instantanée permettant aux utilisateurs de communiquer en temps réel.
 
 Fonctionnalités principales
 - Authentification et gestion des comptes utilisateurs.
@@ -203,28 +280,29 @@ Aspects techniques
 - WebSocket / Pusher pour la communication temps réel.
 - Conteneurisation avec Docker pour faciliter le déploiement.
 - Suivi des bonnes pratiques OOP et sécurisation des routes et données.`,
-  isExpanded: false,
-},
-{
-  id: "apiCandidatures",
-  title: "API REST de Gestion des Candidatures",
-  period: {
-    start: "2025",
+    isExpanded: false,
   },
-  github: "https://github.com/Mohsen-Elrhazi/Gestion_Gandidats_Laravel_REST_API_Part2.git",
-  skills: [
-    "Laravel 10",
-    "PHP",
-    "MySQL",
-    "JWT (jwt-auth) / Sanctum",
-    "Gestion des rôles et permissions",
-    "Export Excel / CSV",
-    "Swagger / Postman",
-    "Git",
-    "API REST",
-    "UML",
-  ],
-  description: `API REST pour la gestion des candidatures, permettant aux candidats, recruteurs et administrateurs de gérer les utilisateurs, offres et candidatures de manière centralisée et sécurisée.
+  {
+    id: "apiCandidatures",
+    title: "API REST de Gestion des Candidatures",
+    period: {
+      start: "2025",
+    },
+    github:
+      "https://github.com/Mohsen-Elrhazi/Gestion_Gandidats_Laravel_REST_API_Part2.git",
+    skills: [
+      "Laravel 10",
+      "PHP",
+      "MySQL",
+      "JWT (jwt-auth) / Sanctum",
+      "Gestion des rôles et permissions",
+      "Export Excel / CSV",
+      "Swagger / Postman",
+      "Git",
+      "API REST",
+      "UML",
+    ],
+    description: `API REST pour la gestion des candidatures, permettant aux candidats, recruteurs et administrateurs de gérer les utilisateurs, offres et candidatures de manière centralisée et sécurisée.
 
 Fonctionnalités principales
 - Gestion des utilisateurs : inscription, authentification (JWT/Sanctum), mise à jour du profil, ajout de compétences.
@@ -242,26 +320,26 @@ Aspects techniques
 - Tests unitaires et fonctionnels avec PHPUnit / Pest
 - Base de données relationnelle MySQL / PostgreSQL avec relations optimisées
 - Développement suivant les bonnes pratiques OOP et Laravel`,
-  isExpanded: false,
-},
-{
-  id: "navettesAutocars",
-  title: "Plateforme de Gestion des Navettes des Autocars",
-  period: {
-    start: "2025",
+    isExpanded: false,
   },
-  github: "https://github.com/Mohsen-Elrhazi/Eventbrite.git",
-  skills: [
-    "Laravel 10",
-    "PHP",
-    "PostgreSQL",
-    "Gestion des rôles et permissions",
-    "Docker",
-    "MVC multi-couches",
-    "Git",
-    "UML"
-  ],
-  description: `Plateforme web pour gérer les offres de navettes des autocars, permettant aux sociétés de transport de créer des offres et aux utilisateurs de s'abonner.
+  {
+    id: "navettesAutocars",
+    title: "Plateforme de Gestion des Navettes des Autocars",
+    period: {
+      start: "2025",
+    },
+    github: "https://github.com/Mohsen-Elrhazi/Eventbrite.git",
+    skills: [
+      "Laravel 10",
+      "PHP",
+      "PostgreSQL",
+      "Gestion des rôles et permissions",
+      "Docker",
+      "MVC multi-couches",
+      "Git",
+      "UML",
+    ],
+    description: `Plateforme web pour gérer les offres de navettes des autocars, permettant aux sociétés de transport de créer des offres et aux utilisateurs de s'abonner.
 
 Fonctionnalités principales
 - Création d'offres par les sociétés de transport : navettes entre deux villes, période d'abonnement, horaires, capacité, description de l'autocar.
@@ -275,29 +353,29 @@ Aspects techniques
 - Conteneurisation avec Docker pour un déploiement facile
 - Base de données relationnelle PostgreSQL
 - Diagrammes UML pour cas d'utilisation et diagrammes de classes`,
-  isExpanded: false,
-},
-{
-  id: "youdemyClone",
-  title: "Plateforme de Cours en Ligne Youdemy",
-  period: {
-    start: "2025",
+    isExpanded: false,
   },
-  github: "https://github.com/Mohsen-Elrhazi/Youdemy-sc2.git",
-  skills: [
-    "PHP natif",
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "MySQL",
-    "Responsive Design",
-    "OOP / Polymorphisme",
-    "Gestion des rôles et permissions",
-    "MVC",
-    "UML",
-    "Git"
-  ],
-  description: `Plateforme de cours en ligne permettant aux étudiants et enseignants de gérer les cours, inscriptions et statistiques dans un environnement interactif.
+  {
+    id: "youdemyClone",
+    title: "Plateforme de Cours en Ligne Youdemy",
+    period: {
+      start: "2025",
+    },
+    github: "https://github.com/Mohsen-Elrhazi/Youdemy-sc2.git",
+    skills: [
+      "PHP natif",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "MySQL",
+      "Responsive Design",
+      "OOP / Polymorphisme",
+      "Gestion des rôles et permissions",
+      "MVC",
+      "UML",
+      "Git",
+    ],
+    description: `Plateforme de cours en ligne permettant aux étudiants et enseignants de gérer les cours, inscriptions et statistiques dans un environnement interactif.
 
 Fonctionnalités principales
 
@@ -315,28 +393,28 @@ Aspects techniques
 - Base de données MySQL
 - Design responsive avec HTML5, CSS3 et JavaScript
 - Diagrammes UML pour modélisation des entités et relations`,
-  isExpanded: false,
-},
-{
-  id: "streamingDB",
-  title: "Gestion d'une Base de Données de Service de Streaming de Films",
-  period: {
-    start: "2024",
+    isExpanded: false,
   },
-  github: "https://github.com/Mohsen-Elrhazi/brief_1_sprint_3.git", 
-  skills: [
-    "SQL",
-    "MySQL",
-    "Conception de base de données",
-    "ERD",
-    "Relations Many-to-Many",
-    "Requêtes avancées (JOIN, GROUP BY, CTE)",
-    "Triggers",
-    "Agrégation et statistiques",
-    "Analyse de données",
-    "Git"
-  ],
-  description: `Conception et gestion d'une base de données pour un service de streaming de films afin de suivre les utilisateurs, les films, les abonnements, l'historique de visionnage et les critiques.
+  {
+    id: "streamingDB",
+    title: "Gestion d'une Base de Données de Service de Streaming de Films",
+    period: {
+      start: "2024",
+    },
+    github: "https://github.com/Mohsen-Elrhazi/brief_1_sprint_3.git",
+    skills: [
+      "SQL",
+      "MySQL",
+      "Conception de base de données",
+      "ERD",
+      "Relations Many-to-Many",
+      "Requêtes avancées (JOIN, GROUP BY, CTE)",
+      "Triggers",
+      "Agrégation et statistiques",
+      "Analyse de données",
+      "Git",
+    ],
+    description: `Conception et gestion d'une base de données pour un service de streaming de films afin de suivre les utilisateurs, les films, les abonnements, l'historique de visionnage et les critiques.
 
 Fonctionnalités principales
 - Gestion des utilisateurs et de leurs abonnements.
@@ -346,106 +424,104 @@ Fonctionnalités principales
 - Écriture de requêtes SQL avancées : INSERT, SELECT, JOIN, GROUP BY, sous-requêtes, CTE, triggers.
 
 `,
-  isExpanded: false,
-},
-// {
-//   id: "futChampionsApp",
-//   title: "Copie de FUT Champions Web App Ultimate Team",
-//   period: {
-//     start: "2024",
-//   },
-//   link: "https://mohsen-elrhazi.github.io/brief_3_sprint_2/", 
-//   github: "https://github.com/Mohsen-Elrhazi/brief_3_sprint_2.git",
-//   skills: [
-//     "HTML5",
-//     "CSS3",
-//     "JavaScript",
-//     "JSON",
-//     "UX",
-//     "UI",
-//     "Responsive Design",
-//     "Git"
-//   ],
-//   description: `Application web pour gérer une équipe FUT (Ultimate Team) pour EA FC 25. 
-// Les utilisateurs peuvent créer, personnaliser et gérer leurs formations et équipes via une interface interactive.
+    isExpanded: false,
+  },
+  // {
+  //   id: "futChampionsApp",
+  //   title: "Copie de FUT Champions Web App Ultimate Team",
+  //   period: {
+  //     start: "2024",
+  //   },
+  //   link: "https://mohsen-elrhazi.github.io/brief_3_sprint_2/",
+  //   github: "https://github.com/Mohsen-Elrhazi/brief_3_sprint_2.git",
+  //   skills: [
+  //     "HTML5",
+  //     "CSS3",
+  //     "JavaScript",
+  //     "JSON",
+  //     "UX",
+  //     "UI",
+  //     "Responsive Design",
+  //     "Git"
+  //   ],
+  //   description: `Application web pour gérer une équipe FUT (Ultimate Team) pour EA FC 25.
+  // Les utilisateurs peuvent créer, personnaliser et gérer leurs formations et équipes via une interface interactive.
 
-// Fonctionnalités principales
-// - Ajout, modification et suppression des joueurs via un formulaire dynamique.
-// - Positionnement automatique des joueurs selon la formation choisie (ex : 4-3-3, 4-4-2).
-// - Gestion de la formation principale et des réservistes.
-// - Validation des champs de saisie pour garantir la cohérence des données.
-// - Interface responsive adaptée aux desktops, tablettes et mobiles.`,
-//   isExpanded: false,
-// },
-// {
-//   id: "reservationApp",
-//   title: "Réservation - Page Interactive",
-//   period: {
-//     start: "2024",
-//   },
-//   link: "https://mohsen-elrhazi.github.io/brief_2_Sprint2/", 
-//   github: "https://github.com/Mohsen-Elrhazi/brief_2_Sprint2.git",
-//   skills: [
-//     "HTML5",
-//     "CSS3",
-//     "JavaScript",
-//     "Responsive Design",
-//     "UI/UX",
-//     "Framework CSS",
-//     "PDF Generation (Bonus)"
-//   ],
-//   description: `Page web interactive pour gérer des réservations étape par étape. 
-// Les utilisateurs peuvent sélectionner les gares de départ et d'arrivée, choisir une date, le nombre de voyageurs et leurs places.
+  // Fonctionnalités principales
+  // - Ajout, modification et suppression des joueurs via un formulaire dynamique.
+  // - Positionnement automatique des joueurs selon la formation choisie (ex : 4-3-3, 4-4-2).
+  // - Gestion de la formation principale et des réservistes.
+  // - Validation des champs de saisie pour garantir la cohérence des données.
+  // - Interface responsive adaptée aux desktops, tablettes et mobiles.`,
+  //   isExpanded: false,
+  // },
+  // {
+  //   id: "reservationApp",
+  //   title: "Réservation - Page Interactive",
+  //   period: {
+  //     start: "2024",
+  //   },
+  //   link: "https://mohsen-elrhazi.github.io/brief_2_Sprint2/",
+  //   github: "https://github.com/Mohsen-Elrhazi/brief_2_Sprint2.git",
+  //   skills: [
+  //     "HTML5",
+  //     "CSS3",
+  //     "JavaScript",
+  //     "Responsive Design",
+  //     "UI/UX",
+  //     "Framework CSS",
+  //     "PDF Generation (Bonus)"
+  //   ],
+  //   description: `Page web interactive pour gérer des réservations étape par étape.
+  // Les utilisateurs peuvent sélectionner les gares de départ et d'arrivée, choisir une date, le nombre de voyageurs et leurs places.
 
-// Fonctionnalités principales
-// - Processus de réservation multi-étapes guidé et intuitif.
-// - Visualisation des résultats avec détails horaires et compagnies.
-// - Sélection des places pour adultes et enfants.
-// - Génération d'un ticket final incluant les informations personnelles et un code QR.
-// - Bonus : génération automatique de tickets PDF à partir des réservations.`,
-//   isExpanded: false,
-// },
-// {
-//   id: "task-scheduler",
-//   title: "Task Scheduler",
-//   period: {
-//     start: "2024",
-//   },
-//   link: "https://mohsen-elrhazi.github.io/brief_4/", 
-//   github: "https://github.com/Mohsen-Elrhazi/brief_4.git", 
-//   skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "DOM Manipulation"],
-//   description: `
-// Créer une application interactive de gestion de tâches permettant aux utilisateurs de :
+  // Fonctionnalités principales
+  // - Processus de réservation multi-étapes guidé et intuitif.
+  // - Visualisation des résultats avec détails horaires et compagnies.
+  // - Sélection des places pour adultes et enfants.
+  // - Génération d'un ticket final incluant les informations personnelles et un code QR.
+  // - Bonus : génération automatique de tickets PDF à partir des réservations.`,
+  //   isExpanded: false,
+  // },
+  // {
+  //   id: "task-scheduler",
+  //   title: "Task Scheduler",
+  //   period: {
+  //     start: "2024",
+  //   },
+  //   link: "https://mohsen-elrhazi.github.io/brief_4/",
+  //   github: "https://github.com/Mohsen-Elrhazi/brief_4.git",
+  //   skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "DOM Manipulation"],
+  //   description: `
+  // Créer une application interactive de gestion de tâches permettant aux utilisateurs de :
 
-// Fonctionnalités principales
-// - Ajouter une tâche avec une description et une date limite
-// - Visualiser toutes les tâches et leur état d’avancement
-// - Marquer les tâches comme "terminées" et supprimer les tâches finies
-// - Recevoir des indications visuelles (couleurs ou icônes) pour identifier les tâches en retard ou à venir
-// - Structurer le code en modules clairs et réutilisables pour faciliter la maintenance
-//   `,
-// },
-// {
-//   id: "dynamic-class-website",
-//   title: "Site Web Dynamique de Classe",
-//   period: {
-//     start: "09.2024",
-//     end: "10.2024",
-//     isOngoing: false,
-//   },
-//   link: "https://mohsen-elrhazi.github.io/Ycode/Briefs/brief_1/index.html", 
-//   github: "https://github.com/Mohsen-Elrhazi/Ycode/tree/master/Briefs/brief_1", 
-//   skills: ["HTML5", "CSS3","Bootstrap", "Navigation", "UI/UX", "Figma"],
-//   description: `
-// Transformer une page web statique en un site web dynamique interconnecté
-// pour améliorer la navigation et l'organisation du contenu.
+  // Fonctionnalités principales
+  // - Ajouter une tâche avec une description et une date limite
+  // - Visualiser toutes les tâches et leur état d’avancement
+  // - Marquer les tâches comme "terminées" et supprimer les tâches finies
+  // - Recevoir des indications visuelles (couleurs ou icônes) pour identifier les tâches en retard ou à venir
+  // - Structurer le code en modules clairs et réutilisables pour faciliter la maintenance
+  //   `,
+  // },
+  // {
+  //   id: "dynamic-class-website",
+  //   title: "Site Web Dynamique de Classe",
+  //   period: {
+  //     start: "09.2024",
+  //     end: "10.2024",
+  //     isOngoing: false,
+  //   },
+  //   link: "https://mohsen-elrhazi.github.io/Ycode/Briefs/brief_1/index.html",
+  //   github: "https://github.com/Mohsen-Elrhazi/Ycode/tree/master/Briefs/brief_1",
+  //   skills: ["HTML5", "CSS3","Bootstrap", "Navigation", "UI/UX", "Figma"],
+  //   description: `
+  // Transformer une page web statique en un site web dynamique interconnecté
+  // pour améliorer la navigation et l'organisation du contenu.
 
-// Fonctionnalités principales
-// - Accueil : Présentation de la classe, description, image représentative
-// - Règles et Stratégies : Liste des règles et conseils pour réussir dans la classe
-// - Contact : Formulaire de contact avec nom, email, message et informations supplémentaires
-//   `,
-// },
-
-
+  // Fonctionnalités principales
+  // - Accueil : Présentation de la classe, description, image représentative
+  // - Règles et Stratégies : Liste des règles et conseils pour réussir dans la classe
+  // - Contact : Formulaire de contact avec nom, email, message et informations supplémentaires
+  //   `,
+  // },
 ];

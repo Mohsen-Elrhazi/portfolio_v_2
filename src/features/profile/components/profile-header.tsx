@@ -9,8 +9,8 @@ import { VerifiedIcon } from "./verified-icon";
 export function ProfileHeader() {
   return (
     <div className="screen-line-after flex border-x border-edge">
-      <div className="absolute top-[-3.5px] left-[-4.5px] size-2 rounded-xs border bg-popover"></div>
-      <div className="absolute top-[-3.5px] right-[-4.5px] size-2 rounded-xs border bg-popover"></div>
+      {/* <div className="absolute top-[-3.5px] left-[-4.5px] size-2 rounded-xs border bg-popover"></div>
+      <div className="absolute top-[-3.5px] right-[-4.5px] size-2 rounded-xs border bg-popover"></div> */}
       <div className="shrink-0 border-r border-edge">
         <div className="mx-[2px] my-[3px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}

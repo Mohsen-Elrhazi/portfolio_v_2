@@ -10,7 +10,7 @@ export const EDUCATIONS: Experience[] = [
         id: "youcode-2024",
         title: " Formation en Développement Web",
         school: "Youcode - UM6P",
-        employmentPeriod: { start: "2024", end: "Present" },
+        employmentPeriod: { start: "2024", end: "2026" },
         location: "Youssoufia, Maroc",
         icon: "education",
         description: `- Programme intensif axé sur le développement web full-stack, couvrant les technologies front-end et back-end.
