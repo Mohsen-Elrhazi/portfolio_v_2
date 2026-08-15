@@ -69,8 +69,8 @@ export default function Page() {
         {/* <Awards />
         <Separator /> */}
 
-        <Certifications />
-        <Separator />
+        {/* <Certifications />
+        <Separator /> */}
 
         <Recommandations />
         <Separator />

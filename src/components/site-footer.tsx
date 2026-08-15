@@ -11,7 +11,7 @@ export function SiteFooter() {
      
       <div className="screen-line-before mx-auto border-x border-edge pt-4 md:max-w-3xl">
         <p className="mb-4 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
-          Développé par{" "}
+          &copy; {new Date().getFullYear()}{" "}
           <a
             className="link"
             href="https://www.linkedin.com/in/mohsen-elrhazi-13a65b2bb/"
