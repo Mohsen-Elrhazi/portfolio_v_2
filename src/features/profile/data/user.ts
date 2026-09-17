@@ -38,5 +38,5 @@ continuer à évoluer techniquement.`,
   namePronunciationUrl: "/audio/audio.mp3",
   keywords: ["Elrhazi Mohsen", "elrhazi mohsen", "mohsen elrhazi", ""],
   dateCreated: "2025-10-27", // YYYY-MM-DD
-  cv: "/Elrhazi_Mohsen_CV.pdf",
+  cv: "/ELRHAZI_Mohsen_CV.pdf",
 };
