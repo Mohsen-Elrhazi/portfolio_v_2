@@ -23,8 +23,8 @@ export function Overview() {
             <JobItem
               key={index}
               title={job.title}
-              company={job.company}
-              website={job.website}
+              // company={job.company}
+              // website={job.website}
             />
           );
         })}
@@ -42,7 +42,7 @@ export function Overview() {
         /> */}
 
         <CvItem
-          icon={DownloadCloudIcon}
+          icon={FileUser }
           // icon={DownloadCloudIcon}
           content="Consulter mon CV"
           href={USER.cv}

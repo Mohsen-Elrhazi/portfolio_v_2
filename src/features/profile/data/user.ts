@@ -15,7 +15,7 @@ export const USER: User = {
     "Développeur Backend",
     // "A la recherche d'une opportunité d'emploi",
   ],
-  address: "Rabat, Maroc",
+  address: "Safi, Maroc",
   phoneNumber: "KzIxMiA2MDQ1NTY0ODc=", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "ZWxyaGF6aS5tb2hzZW4uZGV2QGdtYWlsLmNvbQ==", // base64 encoded
   website: "https://mohsen-elrhazi.tech",
@@ -23,8 +23,8 @@ export const USER: User = {
   jobs: [
     {
       title: "Développeur Full Stack",
-      company: "Jump It",
-      website: "https://www.jumpit.ma/",
+      // company: "Jump It",
+      // website: "https://www.jumpit.ma/",
     },
   ],
   about: `

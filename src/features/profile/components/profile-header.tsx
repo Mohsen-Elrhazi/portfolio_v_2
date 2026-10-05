@@ -56,7 +56,7 @@ export function ProfileHeader() {
             {/* <SimpleTooltip content="Vérifié"> */}
             <VerifiedIcon className="size-[0.6em] translate-y-px text-info select-none" />
             {/* </SimpleTooltip> */}
-            {USER.namePronunciationUrl && (
+            {/* {USER.namePronunciationUrl && (
               <>
                 &nbsp;
                 <PronounceMyName
@@ -64,7 +64,7 @@ export function ProfileHeader() {
                   namePronunciationUrl={USER.namePronunciationUrl}
                 />
               </>
-            )}
+            )} */}
           </h1>
 
           <div className="h-12.5 border-t border-edge py-1 pl-4 sm:h-9">

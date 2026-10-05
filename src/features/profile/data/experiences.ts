@@ -9,7 +9,7 @@ export const EXPERIENCES: Experience[] = [
       {
         id: "Jumpit-2026",
         title: "Développeur Full-stack",
-        employmentPeriod: { start: "05.2026", end: "Présent" },
+        employmentPeriod: { start: "05.2026", end: "10.2026" },
         // employmentType: "Full-time",
         location: "Rabat, Maroc",
         icon: "code",

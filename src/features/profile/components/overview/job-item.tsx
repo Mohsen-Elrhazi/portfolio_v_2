@@ -23,27 +23,27 @@ function getJobIcon(title: string) {
 
 export function JobItem({
   title,
-  company,
-  website,
+  // company,
+  // website,
 }: {
   title: string;
-  company: string;
-  website: string;
+  // company: string;
+  // website: string;
 }) {
   return (
     <IntroItem
       icon={getJobIcon(title)}
       content={
         <>
-          {title} @
-          <a
+          {title} 
+          {/* <a
             className="ml-0.5 font-medium underline-offset-4 hover:underline"
             href={addQueryParams(website, UTM_PARAMS)}
             target="_blank"
             rel="noopener"
           >
             {company}
-          </a>
+          </a> */}
         </>
       }
     />
